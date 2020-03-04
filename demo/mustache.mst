@@ -1,0 +1,18 @@
+<!doctype html>
+
+<h1>{{header}}</h1>
+
+<ul class="items" id="item-container">
+  {{#items}}
+    {{#first}}
+      <li><strong>{{name}}</strong></li>
+    {{/first}}
+    {{#link}}
+    <li><a href="{{url}}">{{name}}</a></li>
+    {{/link}}
+  {{/items}}
+</ul>
+
+{{#empty}}
+  <p>The list is empty.</p>
+{{/empty}}

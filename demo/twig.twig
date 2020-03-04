@@ -1,0 +1,59 @@
+{# Example from https://twig.symfony.com/doc/3.x/templates.html #}
+
+<!doctype html>
+<html>
+
+  <head>
+    {% block head %}
+    <link rel="stylesheet" href="style.css" />
+    <title>{% block title %}{% endblock %} - My Webpage</title>
+    {% endblock %}
+  </head>
+
+  <body>
+    <div id="content">{% block content %}{% endblock %}</div>
+    <div class="footer" id="footer">
+      {% block footer %}
+      &copy; Copyright 2011 by <a href="http://domain.invalid/">you</a>.
+      {% endblock %}
+    </div>
+  </body>
+
+</html>
+
+{% extends "base.html" %}
+
+{% block title %}Index{% endblock %}
+{% block head %}
+{{ parent() }}
+<style type="text/css">
+  #id-selector,
+  .class-selector {
+    color: #336699;
+  }
+
+</style>
+{% endblock %}
+
+{% block content %}
+<h1>Index</h1>
+<p class="important">
+  Welcome to my awesome homepage.
+</p>
+{% endblock %}
+
+{# Comment #}
+{% extends "layout.html" %}
+
+{% block content %}
+Content of the page...
+
+<div class="block" id="idSelector">
+  {% for user in users %}
+  * {{ user.name }}
+  {% else %}
+  No users have been found.
+  {% endfor %}
+</div>
+
+{% endblock %}

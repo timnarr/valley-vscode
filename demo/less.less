@@ -1,0 +1,136 @@
+// Examples from http://lesscss.org/
+
+@width: 10px;
+@height: @width + 10px;
+
+#header {
+  width: @width;
+  height: @height;
+}
+
+.bordered {
+  border-top: dotted 1px black;
+  border-bottom: solid 2px black;
+}
+
+#menu a {
+  color: #111;
+  .bordered();
+}
+
+.post a {
+  color: red;
+  .bordered();
+}
+
+#header {
+  color: black;
+
+  .navigation {
+    font-size: 12px;
+  }
+
+  .logo {
+    width: 300px;
+  }
+}
+
+.clearfix {
+  display: block;
+  zoom: 1;
+
+  &:after {
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+
+.component {
+  width: 300px;
+
+  @media (min-width: 768px) {
+    width: 600px;
+
+    @media (min-resolution: 192dpi) {
+      background-image: url(/img/retina2x.png);
+    }
+  }
+
+  @media (min-width: 1280px) {
+    width: 800px;
+  }
+}
+
+// numbers are converted into the same units
+@conversion-1: 5cm + 10mm; // result is 6cm
+@conversion-2: 2 - 3cm - 5mm; // result is -1.5cm
+
+// conversion is impossible
+@incompatible-units: 2 + 5px - 3cm; // result is 4px
+
+// example with variables
+@base: 5%;
+@filler: @base * 2; // result is 10%
+@other: @base + @filler; // result is 15%
+
+
+@var: 50vh/2;
+width: calc(50% + (@var - 20px)); // result is calc(50% + (25vh - 20px))
+
+
+@min768: ~"(min-width: 768px)";
+
+.element {
+  @media @min768 {
+    font-size: 1.2rem;
+  }
+}
+
+@base: #f04615;
+@width: 0.5;
+
+.class {
+  width: percentage(@width); // returns `50%`
+  color: saturate(@base, 5%);
+  background-color: spin(lighten(@base, 25%), 8);
+}
+
+
+#bundle() {
+  .button {
+    display: block;
+    border: 1px solid black;
+    background-color: grey;
+
+    &:hover {
+      background-color: white;
+    }
+  }
+
+  .tab {
+    ...
+  }
+
+  .citation {
+    ...
+  }
+}
+
+#header a {
+  color: orange;
+  #bundle.button(); // can also be written as #bundle > .button
+}
+
+#colors() {
+  primary: blue;
+  secondary: green;
+}
+
+.button {
+  color: #colors[primary];
+  border: 1px solid #colors[secondary];
+}

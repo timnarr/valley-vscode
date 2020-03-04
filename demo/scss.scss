@@ -1,0 +1,399 @@
+$font-stack-1: 'Helvetica Neue', sans-serif;
+$font-stack-2: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+$primary-color: #333;
+$secondary-color: rgba(111, 22, 33, 0.5);
+
+$var-button-border-width-xl: 8px !global; // [1]
+$var-button-border-width-xs: 2px !default; // [1]
+
+body {
+  font-family: $font-stack-1;
+  color: $primary-color !important;
+  font: 100% $font-stack-1;
+}
+
+$map-button-size-variants: (
+  'small': (
+    'font-size': $var-button-font-size - 4px,
+    'padding': 8px 12px,
+  ),
+  'base': ('font-size': $var-button-font-size - 2px,
+    'padding': 12px 16px,
+  ),
+  'large': ('font-size': $var-button-font-size,
+    'padding': 16px 24px,
+  ),
+) !default;
+
+
+// SassDoc
+/// @access private
+/// @access public
+/// @alias other-item
+/// @author Author's name
+/// @example
+///   4 + 2 = 6
+///   4 / 2 = 2
+/// @example scss - Clamp function
+///   clamp(42, $min: 13, $max: 37)
+///   // 37
+/// @content [Description]
+/// @deprecated Deprecation related message
+/// @group helpers
+/// @ignore Message
+/// @link http://some.url Optional caption
+/// @name message-[error|warning|success|info]
+/// @param {type} $name
+/// @param {type | othertype} $name
+/// @param {type} $name - description
+/// @param {type} $name [default value] - description
+/// @prop {Type} base.default [default] - description
+/// @require item
+/// @require {type} item
+/// @require {type} item - description
+/// @require {type} item description
+/// @require {type} item <link>
+/// @require {type} item description <link>
+/// @return {type}
+/// @return {type | othertype}
+/// @return {type} description
+/// @see other-item
+/// @see {mixin} other-item
+/// @see $other-item
+/// @see %other-item
+/// @since version
+/// @since version description
+/// @throw Error related message
+/// @todo Task to be done
+/// @type Bool | String
+
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+.box {
+  @include transform(rotate(30deg));
+}
+
+.container {
+  width: 100%;
+
+  & + & {
+    margin-top: 20px;
+  }
+
+  & + &.class-selector {
+    opacity: 0.4;
+  }
+
+  & + &::after {
+    content: 'Pseudo Element';
+  }
+
+  #id-parent > & {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+article[role="main"] {
+  float: left;
+  width: 600px / 960px * 100%;
+}
+
+aside[role="complementary"] {
+  float: right;
+  width: 300px / 960px * 100%;
+}
+
+
+@function my-calculation-function($some-number, $another-number) {
+  @return $some-number+$another-number
+};
+
+.my-module {
+  padding: my-calculation-function(10px, 5px);
+}
+
+@keyframes identifier {
+  0% {
+    top: 0;
+    left: 0;
+  }
+
+  30% {
+    top: 50px;
+  }
+
+  68%,
+  72% {
+    left: 50px;
+  }
+
+  100% {
+    top: 100px;
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes identifier {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+// Interpolation
+// https://sass-lang.com/documentation/interpolation
+@mixin corner-icon($name, $top-or-bottom, $left-or-right) {
+  .icon-#{$name} {
+    background-image: url("/icons/#{$name}.svg");
+    position: absolute;
+    #{$top-or-bottom}: 0;
+    #{$left-or-right}: 0;
+  }
+}
+
+@include corner-icon("mail", top, left);
+
+// @use, @forward and @import
+@use 'foundation/code';
+@forward "src/list";
+@import 'foundation/code', 'foundation/lists';
+
+// @mixin and @include
+// https://sass-lang.com/documentation/at-rules/mixin
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin horizontal-list {
+  @include reset-list;
+
+  li {
+    display: inline-block;
+
+    margin: {
+      left: -2px;
+      right: 2em;
+    }
+  }
+}
+
+nav ul {
+  @include horizontal-list;
+}
+
+// @function
+// https://sass-lang.com/documentation/at-rules/function
+@function pow($base, $exponent) {
+  $result: 1;
+
+  @for $_ from 1 through $exponent {
+    $result: $result * $base;
+  }
+
+  @return $result;
+}
+
+.sidebar {
+  float: left;
+  margin-left: pow(4, 3) * 1px;
+}
+
+// @extend
+// https://sass-lang.com/documentation/at-rules/extend
+.error {
+  border: 1px #f00;
+  background-color: #fdd;
+
+  &--serious {
+    @extend .error;
+    border-width: 3px;
+  }
+}
+
+// @error
+// https://sass-lang.com/documentation/at-rules/error
+@mixin reflexive-position($property, $value) {
+  @if $property != left and $property != right {
+    @error "Property #{$property} must be either left or right.";
+  }
+
+  $left-value: if($property==right, initial, $value);
+  $right-value: if($property==right, $value, initial);
+
+  left: $left-value;
+  right: $right-value;
+
+  [dir="rtl"] & {
+    left: $right-value;
+    right: $left-value;
+  }
+}
+
+.sidebar {
+  @include reflexive-position(top, 12px);
+  //       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  // Error: Property top must be either left or right.
+}
+
+// @warn
+// https://sass-lang.com/documentation/at-rules/warn
+$known-prefixes: webkit,
+moz,
+ms,
+o;
+
+@mixin prefix($property, $value, $prefixes) {
+  @each $prefix in $prefixes {
+    @if not index($known-prefixes, $prefix) {
+      @warn "Unknown prefix #{$prefix}.";
+    }
+
+    -#{$prefix}-#{$property}: $value;
+  }
+
+  #{$property}: $value;
+}
+
+.tilt {
+  // Oops, we typo'd "webkit" as "wekbit"!
+  @include prefix(transform, rotate(15deg), wekbit ms);
+}
+
+// @debug
+// https://sass-lang.com/documentation/at-rules/debug
+@mixin inset-divider-offset($offset, $padding) {
+  $divider-offset: (2 * $padding) + $offset;
+  @debug "divider offset: #{$divider-offset}";
+
+  margin-left: $divider-offset;
+  width: calc(100% - #{$divider-offset});
+}
+
+// @at-root
+// https://sass-lang.com/documentation/at-rules/at-root
+@use "sass:selector";
+
+@mixin unify-parent($child) {
+  @at-root #{selector.unify(&, $child)} {
+    @content;
+  }
+}
+
+.wrapper .field {
+  @include unify-parent("input") {
+    /* ... */
+  }
+
+  @include unify-parent("select") {
+    /* ... */
+  }
+}
+
+// Flow Control
+
+// @if and @else
+// https://sass-lang.com/documentation/at-rules/control/if
+@mixin triangle($size, $color, $direction) {
+  height: 0;
+  width: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: $size / 2;
+
+  @if $direction==up {
+    border-bottom-color: $color;
+  }
+
+  @else if $direction==right {
+    border-left-color: $color;
+  }
+
+  @else if $direction==down {
+    border-top-color: $color;
+  }
+
+  @else if $direction==left {
+    border-right-color: $color;
+  }
+
+  @else {
+    @error "Unknown direction #{$direction}.";
+  }
+}
+
+.next {
+  @include triangle(5px, black, right);
+}
+
+
+// @each
+// https://sass-lang.com/documentation/at-rules/control/each
+$icons: ("eye": "\f112", "start": "\f12e", "stop": "\f12f");
+
+@each $name, $glyph in $icons {
+  .icon-#{$name}:before {
+    display: inline-block;
+    font-family: "Icon Font";
+    content: $glyph;
+  }
+}
+
+// @for
+// https://sass-lang.com/documentation/at-rules/control/for
+$base-color: #036;
+
+@for $i from 1 through 3 {
+  ul:nth-child(3n + #{$i}) {
+    background-color: lighten($base-color, $i * 5%);
+  }
+}
+
+// @while
+// https://sass-lang.com/documentation/at-rules/control/while
+// Divides `$value` by `$ratio` until it's below `$base`.
+@function scale-below($value, $base, $ratio: 1.618) {
+  @while $value>$base {
+    $value: $value / $ratio;
+  }
+
+  @return $value;
+}
+
+$normal-font-size: 16px;
+
+sup {
+  font-size: scale-below(20px, 16px);
+}
