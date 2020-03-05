@@ -375,13 +375,13 @@ const editorColor = {
     // # Menu Bar colors
     // https://code.visualstudio.com/api/references/theme-color#menu-bar-colors
     "menubar.selectionForeground": color.white,
-    "menubar.selectionBackground": color.white + alpha04,
-    "menubar.selectionBorder": color.white + alpha00,
+    "menubar.selectionBackground": color.white + color.alpha04,
+    "menubar.selectionBorder": color.white + color.alpha00,
     "menu.foreground": color.editor.text.default,
     "menu.background": color.editor.surface.depth0,
     "menu.selectionForeground": color.white,
-    "menu.selectionBackground": color.white + alpha04,
-    "menu.selectionBorder": color.white + alpha00,
+    "menu.selectionBackground": color.white + color.alpha04,
+    "menu.selectionBorder": color.white + color.alpha00,
     "menu.separatorBackground": color.editor.surface.border.depth3,
     "menu.border": color.editor.surface.depth0,
 
