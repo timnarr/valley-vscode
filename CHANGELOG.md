@@ -7,6 +7,9 @@
 
 ***
 
+## 0.1.2 - March 05, 2020
+- [•] Fixed undefined color for alpha values and added the forgotten build 🙈
+
 ## 0.1.1 - March 05, 2020
 - [•] Fixed menu and menubar colors for Windows and Linux [#1](https://github.com/TimGr/valley-vscode/issues/1)
 
