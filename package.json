@@ -4,7 +4,7 @@
   "description": "Valley is a simple theme for Visual Studio Code without visual noise. Created with handpicked and vivid colors, appropriate contrast and a lot of love to help you focus on your code.",
   "version": "0.1.1",
   "license": "CC-BY-NC-4.0",
-  "publisher": "Tim Grochowski",
+  "publisher": "TimGrochowski",
   "author": "Tim Grochowski <dev@tim-grochowski.de>",
   "repository": {
     "type": "git",
@@ -15,8 +15,7 @@
   },
   "homepage": "https://github.com/TimGr/valley-vscode",
   "scripts": {
-    "build": "node -r esm build.js",
-    "publish": "vsce publish"
+    "build": "node -r esm build.js"
   },
   "galleryBanner": {
     "color": "#1E1E1F",
@@ -26,7 +25,7 @@
   "keywords": [
     "theme",
     "color theme",
-    "dark Tteme",
+    "dark theme",
     "valley",
     "valley theme",
     "grey"
