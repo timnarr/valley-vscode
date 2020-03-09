@@ -1,4 +1,4 @@
-<div align="center" style="max-width:600px;margin:0 auto;">
+<div align="center">
 
   # Valley Theme for Visual Studio Code
   [Valley](https://marketplace.visualstudio.com/items?itemName=TimGrochowski.valley-vscode) is a simple theme for Visual Studio Code without visual noise. Created with handpicked and vivid colors, appropriate contrast and a lot of love to help you focus on your code.
@@ -13,12 +13,14 @@
 ----
 
 ## 📦 How to Install
-- Open the "Extensions" sidebar in Visual Studio Code
+- Open the **"Extensions"** sidebar in Visual Studio Code
 - Search for `Valley`
-- Choose "Valley" by Tim Grochowski and click "Install"
+- Choose "Valley" by Tim Grochowski and click **"Install"**
 - [Select the Theme](https://code.visualstudio.com/docs/getstarted/themes#_selecting-the-color-theme)
 
 ## 🌄 Screenshots
+You can find more screenshots [here](https://github.com/TimGr/valley-vscode/blob/master/screenshots/).
+
 **Vivid and pleasant syntax color palette for long coding sessions.**
 
 ![Valley syntax JavaScript](https://github.com/TimGr/valley-vscode/blob/master/screenshots/valley-vscode-syntax-javascript.png?raw=true)
@@ -27,7 +29,7 @@
 
 ![Valley syntax HTML](https://github.com/TimGr/valley-vscode/blob/master/screenshots/valley-vscode-syntax-html.png?raw=true)
 
-**To improve orientation, I have colored the surfaces according to their z-axis. The closer the surface is to the user, the brighter it is.**
+**To improve orientation, I have colored the surfaces according to their z-axis. The closer a surface is to the user, the brighter it is.**
 
 ![Valley surfaces and command palette](https://github.com/TimGr/valley-vscode/blob/master/screenshots/valley-vscode-editor-surfaces-commands.png?raw=true)
 
@@ -46,7 +48,7 @@ You can explore Valley's color palette on [calcolor.co](https://calcolor.co/pale
 If something does not look the way you want it to, feel free to overwrite it via user settings and give Valley your own personal touch. For more Information see the Visual Studio Code docs for ["Customizing a Color Theme"](https://code.visualstudio.com/docs/getstarted/themes#_customizing-a-color-theme).
 
 ## ⚙️ Recommended Settings
-I can highly recommend the following settings to improve readability and appearance of Visual Studio Code. By the way, these are also the settings that can be seen on the screenshots:
+I can highly recommend the following settings to improve readability and appearance of Visual Studio Code. These are also the settings that can be seen on the screenshots:
 
 ```json
 "workbench.colorTheme": "Valley",
@@ -85,7 +87,7 @@ I have used a lot of great tools that have helped me to create this theme:
 - [calcolor.co](https://calcolor.co)
 
 ## ©️ License
-**Valley Theme** by **Tim Grochowski** is licensed under a ["Creative Commons Attribution-NonCommercial 4.0 International"](https://creativecommons.org/licenses/by-nc/4.0/) License.
+**Valley Theme** by **Tim Grochowski** is licensed under the ["Creative Commons Attribution-NonCommercial 4.0 International"](https://creativecommons.org/licenses/by-nc/4.0/) License.
 
 ***
 
