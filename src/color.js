@@ -96,6 +96,40 @@ const color = {
     tintedGray: '#8B949C', // Punctuation
     metallicBlue: '#55708B', // Comment
   },
+  terminal: {
+    ansiBlack: {
+      normal: '#282829',
+      bright: '#656567'
+    },
+    ansiBlue: {
+      normal: '#5B89DB',
+      bright: '#91B7F8'
+    },
+    ansiCyan: {
+      normal: '#57B6CD',
+      bright: '#84DCF0'
+    },
+    ansiGreen: {
+      normal: '#78B98A',
+      bright: '#A0E4B2'
+    },
+    ansiMagenta: {
+      normal: '#DF91CA',
+      bright: '#FACCEE'
+    },
+    ansiRed: {
+      normal: '#D66A81',
+      bright: '#F59EB1'
+    },
+    ansiWhite: {
+      normal: '#FAFAFA',
+      bright: '#FAFAFA'
+    },
+    ansiYellow: {
+      normal: '#D8C67E',
+      bright: '#F5E8B2'
+    },
+  },
 }
 
 export default color;

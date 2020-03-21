@@ -1,17 +1,23 @@
 # Changelog
-
-**Legend**
-- [+] added/new
-- [•] changed/improved/fixed
-- [-] removed
+All notable changes to "Valley" will be documented in this file.
 
 ***
 
+## 0.1.3 - March 12, 2020
+`Added`
+- Added terminal color palette with normal and bright variants
+
+`Changed`
+- Improved contrast for linenumbers
+- Improved terminal colors
+
 ## 0.1.2 - March 05, 2020
-- [•] Fixed undefined color for alpha values and added the forgotten build 🙈
+`Fixed`
+- Fixed undefined color for alpha values and added the forgotten build
 
 ## 0.1.1 - March 05, 2020
-- [•] Fixed menu and menubar colors for Windows and Linux [#1](https://github.com/TimGr/valley-vscode/issues/1)
+`Fixed`
+- Fixed menu and menubar colors for Windows and Linux [#1](https://github.com/TimGr/valley-vscode/issues/1)
 
 ## 0.1.0 - March 04, 2020
 🎉 Initial Release
