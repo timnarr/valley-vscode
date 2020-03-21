@@ -4,7 +4,7 @@
 
 const contrast = require('get-contrast');
 const prettyOutput = require('prettyoutput')
-import color from './src/color';
+import color from '../src/color';
 
 const check = (colorA, colorB) => {
   const ratio = contrast.ratio(colorA, colorB)
