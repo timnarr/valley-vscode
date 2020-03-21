@@ -12,14 +12,25 @@
 
 ----
 
+## 🚀 My motivation to build Valley
+>I've always had this feeling about themes like: "If I use this theme it makes me a better developer", which is of course totally stupid, but I've always had this feeling and changed my theme many times. But I didn't felt completely comfortable with any of it and was kind of blocked in my work. Because colors were not harmonious, contrasts were missing or much too strong. And all in all, I always lacked orientation because there was a lack of design in some way. And so I have developed my own. Of course this is a **very personal perception**, and this theme won't fit 100% for some people either. But maybe only a few people have as much fun with Valley as I do.
+
 ## 📦 How to Install
 - Open the **"Extensions"** sidebar in Visual Studio Code
 - Search for `Valley`
 - Choose "Valley" by Tim Grochowski and click **"Install"**
 - [Select the Theme](https://code.visualstudio.com/docs/getstarted/themes#_selecting-the-color-theme)
 
+**or via "Quick Open, Go to File..."**
+
+- Open the **"Quick Open, Go to File..."** input, by pressing the `⌘P` shortcut on macOS or `Ctrl+P` on Windows/Linux
+- Copy-Paste this line `ext install TimGrochowski.valley-vscode`
+- Press Enter
+
+**and if you like Valley rate it or write a review in the [marketplace](https://marketplace.visualstudio.com/items?itemName=TimGrochowski.valley-vscode&ssr=false#review-details)** ✨
+
 ## 🌄 Screenshots
-You can find more screenshots [here](https://github.com/TimGr/valley-vscode/blob/master/screenshots/).
+You can find more screenshots [here](https://github.com/TimGr/valley-vscode/blob/master/screenshots.md).
 
 **Vivid and pleasant syntax color palette for long coding sessions.**
 
@@ -52,7 +63,11 @@ I can highly recommend the following settings to improve readability and appeara
 
 ```json
 "workbench.colorTheme": "Valley",
+// Editor
+"editor.padding.top": 24,
+"editor.padding.bottom": 24,
 // Typography
+// https://www.jetbrains.com/lp/mono/
 "editor.fontFamily": "JetBrains Mono, monospace",
 "editor.fontLigatures": true,
 "editor.fontSize": 16,
@@ -95,6 +110,6 @@ The syntax color palette was partly inspired by the Google Chrome DevTools Theme
 
 ***
 
-Valley is available for free in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=TimGrochowski.valley-vscode). If you enjoy using it and want to say thank you then you can [buy me a coffee](https://www.buymeacoffee.com/TimGr).
+Valley is available for free in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=TimGrochowski.valley-vscode). If you enjoy using it and want to say thank you then you can [buy me a coffee](https://www.buymeacoffee.com/TimGr) and/or rate it/write a review in the [marketplace](https://marketplace.visualstudio.com/items?itemName=TimGrochowski.valley-vscode&ssr=false#review-details) ✨.
 
 **Enjoy** ❤️
