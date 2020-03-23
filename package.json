@@ -42,6 +42,11 @@
         "label": "Valley",
         "uiTheme": "vs-dark",
         "path": "./themes/valley_dark.json"
+      },
+      {
+        "label": "Valley Light",
+        "uiTheme": "vs",
+        "path": "./themes/valley_light.json"
       }
     ]
   },

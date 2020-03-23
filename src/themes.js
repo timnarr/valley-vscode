@@ -5,10 +5,19 @@ const themes = [
   {
     "id": "valley_dark",
     "theme": {
-      "name": "Valley",
+      "name": "Valley Dark",
       "type": "dark",
-      ...editorColor,
-      ...syntaxColor
+      ...editorColor('dark'),
+      ...syntaxColor('dark')
+    }
+  },
+  {
+    "id": "valley_light",
+    "theme": {
+      "name": "Valley Light",
+      "type": "light",
+      ...editorColor('light'),
+      ...syntaxColor('light')
     }
   },
 ];

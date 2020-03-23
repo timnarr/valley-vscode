@@ -1,4 +1,4 @@
-const color = {
+const colorDark = {
   alpha00: "00",
   alpha02: "05",
   alpha03: "08",
@@ -132,4 +132,4 @@ const color = {
   },
 }
 
-export default color;
+export default colorDark;
