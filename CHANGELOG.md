@@ -6,6 +6,7 @@ All notable changes to "Valley" will be documented in this file.
 ## 0.1.4 - UNRELEASED
 `Changed`
 - Improved contrast of whitspace foreground color
+- Changed Assignment Operators to use `pinkish` foreground color
 
 ## 0.1.3 - March 12, 2020
 `Added`

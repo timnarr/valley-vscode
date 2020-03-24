@@ -88,6 +88,6 @@ x = y
 x += y
 x -= y
 x *= y
-x /= y
+x /= y // no `keyword.operator.assignment.compound` scope available
 x %= y
 x **= y

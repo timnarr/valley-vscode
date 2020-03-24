@@ -289,7 +289,10 @@ const baseSyntax = [
     }
   },
   {
-    "scope": "keyword.operator",
+    "scope": [
+      "keyword.operator",
+      "keyword.operator.assignment.compound",
+    ],
     "settings": {
       "foreground": color.syntax.pinkish
     }
