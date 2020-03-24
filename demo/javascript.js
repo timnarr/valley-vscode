@@ -81,3 +81,13 @@ class Halloween {
 const zombie = new Halloween('zombieCostume');
 
 zombie.boo()
+
+
+// JavaScript Assignment Operators
+x = y
+x += y
+x -= y
+x *= y
+x /= y
+x %= y
+x **= y
