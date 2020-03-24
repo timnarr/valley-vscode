@@ -221,7 +221,7 @@ const editorColor = {
     "editor.symbolHighlightBackground": color.editor.action.search + color.alpha10,
     // "editor.symbolHighlightBorder": "",
     // ## Whitespace
-    "editorWhitespace.foreground": color.editor.text.default + color.alpha15,
+    "editorWhitespace.foreground": color.editor.text.default + color.alpha20,
     // ## Indent Guides
     "editorIndentGuide.background": color.white + color.alpha05,
     "editorIndentGuide.activeBackground": color.white + color.alpha15,
