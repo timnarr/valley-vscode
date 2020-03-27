@@ -35,6 +35,7 @@ const baseSyntax = [
     "scope": [
       "meta.brace",
       "meta.parameters",
+      "meta.embedded",
       "punctuation.accessor",
       "punctuation.definition.dictionary",
       "punctuation.definition.block",
@@ -64,7 +65,6 @@ const baseSyntax = [
    */
   {
     "scope": [
-      "meta.embedded",
       "source.groovy.embedded"
     ],
     "settings": {
@@ -447,15 +447,6 @@ const baseSyntax = [
     ],
     "settings": {
       "foreground": color.syntax.wisteria
-    }
-  },
-  {
-    "name": "Assignment Keyword",
-    "scope": [
-      "keyword.operator.assignment"
-    ],
-    "settings": {
-      "foreground": color.syntax.silver
     }
   },
   {
