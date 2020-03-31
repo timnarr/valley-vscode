@@ -31,47 +31,47 @@ const check = (colorA, colorB) => {
 
 const tests = [{
     "Name": "Syntax - silver",
-    "Result": check(color.syntax.silver, color.editor.surface.depth5)
+    "Result": check(color.syntax.silver, color.editor.surface.depth4)
   },
   {
     "Name": "Syntax - tintedGray",
-    "Result": check(color.syntax.tintedGray, color.editor.surface.depth5)
+    "Result": check(color.syntax.tintedGray, color.editor.surface.depth4)
   },
   {
     "Name": "Syntax - metallicBlue",
-    "Result": check(color.syntax.metallicBlue, color.editor.surface.depth5)
+    "Result": check(color.syntax.metallicBlue, color.editor.surface.depth4)
   },
   {
     "Name": "Syntax - tea",
-    "Result": check(color.syntax.tea, color.editor.surface.depth5)
+    "Result": check(color.syntax.tea, color.editor.surface.depth4)
   },
   {
     "Name": "Syntax - turquoiseBlue",
-    "Result": check(color.syntax.turquoiseBlue, color.editor.surface.depth5)
+    "Result": check(color.syntax.turquoiseBlue, color.editor.surface.depth4)
   },
   {
     "Name": "Syntax - darkSkyBlue",
-    "Result": check(color.syntax.darkSkyBlue, color.editor.surface.depth5)
+    "Result": check(color.syntax.darkSkyBlue, color.editor.surface.depth4)
   },
   {
     "Name": "Syntax - wisteria",
-    "Result": check(color.syntax.wisteria, color.editor.surface.depth5)
+    "Result": check(color.syntax.wisteria, color.editor.surface.depth4)
   },
   {
     "Name": "Syntax - lavenderPink",
-    "Result": check(color.syntax.lavenderPink, color.editor.surface.depth5)
+    "Result": check(color.syntax.lavenderPink, color.editor.surface.depth4)
   },
   {
     "Name": "Syntax - pinkish",
-    "Result": check(color.syntax.pinkish, color.editor.surface.depth5)
+    "Result": check(color.syntax.pinkish, color.editor.surface.depth4)
   },
   {
     "Name": "Syntax - pinkishTan",
-    "Result": check(color.syntax.pinkishTan, color.editor.surface.depth5)
+    "Result": check(color.syntax.pinkishTan, color.editor.surface.depth4)
   },
   {
     "Name": "Syntax - sand",
-    "Result": check(color.syntax.sand, color.editor.surface.depth5)
+    "Result": check(color.syntax.sand, color.editor.surface.depth4)
   },
 ];
 
