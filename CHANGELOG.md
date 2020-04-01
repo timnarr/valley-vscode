@@ -3,7 +3,7 @@ All notable changes to "Valley" will be documented in this file.
 
 ***
 
-## 0.1.4 - UNRELEASED
+## 0.1.4 - April 01, 2020
 `Changed`
 - Improved contrast of whitspace rendering
 - Improved and unified assignment scopes
