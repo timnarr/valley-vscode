@@ -90,6 +90,9 @@ I can highly recommend the following settings to improve readability and appeara
 ## 💬 Feedback and Issues
 If you have any suggestions, feedback or if you found a bug, please [file an issue](https://github.com/TimGr/valley-vscode/issues) and let me know. I am very happy about every feedback. Screenshots are very welcome.
 
+## 👪 Valley Adoptions
+- [Valley for iTerm2](https://github.com/TimGr/valley-iterm)
+
 ## 🔧 Tools
 I have used a lot of great tools that have helped me to create this theme:
 - [whocanuse.com](https://whocanuse.com/)
