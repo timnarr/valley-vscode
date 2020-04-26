@@ -16,7 +16,10 @@ const base = (fontstyle) => {
     },
     {
       "name": "Bold",
-      "scope": "strong",
+      "scope": [
+        "strong",
+        "markup.heading",
+      ],
       "settings": {
         "fontStyle": "bold"
       }
@@ -108,7 +111,8 @@ const base = (fontstyle) => {
     {
       "scope": "entity.other.attribute-name",
       "settings": {
-        "foreground": color.syntax.wisteria
+        "foreground": color.syntax.wisteria,
+        "fontStyle": fontstyle === 'italic' ? 'italic' : '',
       }
     },
     {
@@ -218,7 +222,8 @@ const base = (fontstyle) => {
         "storage.modifier",
       ],
       "settings": {
-        "foreground": color.syntax.turquoiseBlue
+        "foreground": color.syntax.turquoiseBlue,
+        "fontStyle": fontstyle === 'italic' ? 'italic' : '',
       }
     },
     {
@@ -281,13 +286,15 @@ const base = (fontstyle) => {
     {
       "scope": "keyword",
       "settings": {
-        "foreground": color.syntax.turquoiseBlue
+        "foreground": color.syntax.turquoiseBlue,
+        "fontStyle": fontstyle === 'italic' ? 'italic' : '',
       }
     },
     {
       "scope": "keyword.control",
       "settings": {
-        "foreground": color.syntax.turquoiseBlue
+        "foreground": color.syntax.turquoiseBlue,
+        "fontStyle": fontstyle === 'italic' ? 'italic' : '',
       }
     },
     {
@@ -296,7 +303,8 @@ const base = (fontstyle) => {
         "keyword.operator.assignment.compound",
       ],
       "settings": {
-        "foreground": color.syntax.pinkish
+        "foreground": color.syntax.pinkish,
+        "fontStyle": '',
       }
     },
     {
@@ -358,16 +366,15 @@ const base = (fontstyle) => {
       "name": "this.self",
       "scope": "variable.language",
       "settings": {
-        "foreground": color.syntax.sand
+        "foreground": color.syntax.sand,
       }
     },
     {
       "name": "Function",
-      "scope": [
-        "entity.name.function"
-      ],
+      "scope": "entity.name.function",
       "settings": {
-        "foreground": color.syntax.tea
+        "foreground": color.syntax.tea,
+        "fontStyle": fontstyle === 'italic' ? 'italic' : '',
       }
     },
     {
@@ -452,6 +459,18 @@ const base = (fontstyle) => {
       }
     },
     {
+      "scope": [
+        "keyword.operator.new",
+        "keyword.operator.expression",
+        "keyword.operator.cast",
+        "keyword.operator.sizeof",
+        "keyword.operator.logical.python"
+      ],
+      "settings": {
+        "fontStyle": fontstyle === 'italic' ? 'italic' : '',
+      }
+    },
+    {
       "name": "Variable and parameter name",
       "scope": [
         "entity.name.variable",
@@ -461,6 +480,13 @@ const base = (fontstyle) => {
       ],
       "settings": {
         "foreground": color.syntax.turquoiseBlue
+      }
+    },
+    {
+      "name": "Constant Variable",
+      "scope": "variable.other.constant",
+      "settings": {
+        "fontStyle": fontstyle === 'italic' ? 'italic' : '',
       }
     },
     {
