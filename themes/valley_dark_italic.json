@@ -1,5 +1,5 @@
 {
-  "name": "Valley",
+  "name": "Valley Italic",
   "type": "dark",
   "colors": {
     "focusBorder": "#64AEF7CC",
@@ -492,7 +492,7 @@
       "scope": "entity.other.attribute-name",
       "settings": {
         "foreground": "#9285CC",
-        "fontStyle": ""
+        "fontStyle": "italic"
       }
     },
     {
@@ -603,7 +603,7 @@
       ],
       "settings": {
         "foreground": "#57B6CD",
-        "fontStyle": ""
+        "fontStyle": "italic"
       }
     },
     {
@@ -667,14 +667,14 @@
       "scope": "keyword",
       "settings": {
         "foreground": "#57B6CD",
-        "fontStyle": ""
+        "fontStyle": "italic"
       }
     },
     {
       "scope": "keyword.control",
       "settings": {
         "foreground": "#57B6CD",
-        "fontStyle": ""
+        "fontStyle": "italic"
       }
     },
     {
@@ -754,7 +754,7 @@
       "scope": "entity.name.function",
       "settings": {
         "foreground": "#78B98A",
-        "fontStyle": ""
+        "fontStyle": "italic"
       }
     },
     {
@@ -847,7 +847,7 @@
         "keyword.operator.logical.python"
       ],
       "settings": {
-        "fontStyle": ""
+        "fontStyle": "italic"
       }
     },
     {
@@ -866,7 +866,7 @@
       "name": "Constant Variable",
       "scope": "variable.other.constant",
       "settings": {
-        "fontStyle": ""
+        "fontStyle": "italic"
       }
     },
     {
