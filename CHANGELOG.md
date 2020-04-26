@@ -3,6 +3,13 @@ All notable changes to "Valley" will be documented in this file.
 
 ***
 
+## 0.2.0 - April 26, 2020
+`Added`
+- Italic theme introduced
+
+`Changed`
+- Removed "meta.embedded" from the puncutation style and added detailed scopes for punctuation to work correctly in PHP
+
 ## 0.1.4 - April 01, 2020
 `Changed`
 - Improved contrast of whitspace rendering
