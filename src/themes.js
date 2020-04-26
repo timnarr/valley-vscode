@@ -8,7 +8,16 @@ const themes = [
       "name": "Valley",
       "type": "dark",
       ...editorColor,
-      ...syntaxColor
+      ...syntaxColor('normal')
+    }
+  },
+  {
+    "id": "valley_dark_italic",
+    "theme": {
+      "name": "Valley Italic",
+      "type": "dark",
+      ...editorColor,
+      ...syntaxColor('italic')
     }
   },
 ];
