@@ -20,7 +20,7 @@ const color = {
   alpha90: "E6",
   black: "#000000",
   debug: "#ff00aa",
-  white: "#FFFFFF",
+  white: "#E5E7E8",
   editor: {
     action: {
       activeSelectionBackground: "#324866",
@@ -61,7 +61,7 @@ const color = {
       },
     },
     text: {
-      default: "#C5C5C9",
+      default: "#BFC7CF",
       muted: "#8B949C",
     },
   },
@@ -91,7 +91,7 @@ const color = {
     pinkish: '#D66A81',
     pinkishTan: '#CD926D',
     sand: '#D8C67E',
-    silver: '#C5C5C9', // Foreground/Text
+    silver: '#BFC7CF', // Foreground/Text
     tintedGray: '#8B949C', // Punctuation
     metallicBlue: '#55708B', // Comment
   },
