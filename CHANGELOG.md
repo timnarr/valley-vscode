@@ -3,6 +3,12 @@ All notable changes to "Valley" will be documented in this file.
 
 ***
 
+## 0.3.0 - June 16, 2020
+`Changed`
+- Enabled "semanticHighlighting" by default
+- Simplified Sidebar-Section-Header
+- Minor text color adjustments
+
 ## 0.2.0 - April 26, 2020
 `Added`
 - Italic theme introduced
