@@ -9,10 +9,10 @@ import nunjucks from './syntax-scopes/language-scopes/nunjucks';
 import twig from './syntax-scopes/language-scopes/twig';
 import xml from './syntax-scopes/language-scopes/xml';
 
-const syntaxColor = (type) => {
+const syntaxColor = (type, fontstyle) => {
   const syntaxColor = {
     tokenColors: [
-      ...base(type),
+      ...base(type, fontstyle),
       ...css(type),
       ...handlebars(type),
       ...html(type),
@@ -23,9 +23,9 @@ const syntaxColor = (type) => {
       ...twig(type),
       ...xml(type),
     ]
-  };
+  }
 
   return syntaxColor;
-};
+}
 
 export default syntaxColor;

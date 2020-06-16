@@ -2,11 +2,8 @@ import colorDark from '../color_dark';
 import colorLight from '../color_light';
 
 const base = (type) => {
-  let color;
 
-  if (type === 'dark') {
-    color = colorDark;
-  }
+  let color = colorDark;
 
   if (type === 'light') {
     color = colorLight;
@@ -26,7 +23,10 @@ const base = (type) => {
     },
     {
       "name": "Bold",
-      "scope": "strong",
+      "scope": [
+        "strong",
+        "markup.heading",
+      ],
       "settings": {
         "fontStyle": "bold"
       }
@@ -47,12 +47,24 @@ const base = (type) => {
       "scope": [
         "meta.brace",
         "meta.parameters",
+        "punctuation.definition.begin.bracket.curly",
+        "punctuation.definition.end.bracket.curly",
+        "punctuation.definition.class.begin.bracket.curly",
+        "punctuation.definition.class.end.bracket.curly",
+        "punctuation.definition.begin.bracket.round",
+        "punctuation.definition.end.bracket.round",
+        "punctuation.definition.parameters.begin.bracket.round",
+        "punctuation.definition.parameters.end.bracket.round",
+        "punctuation.definition.arguments.begin.bracket.round",
+        "punctuation.definition.arguments.end.bracket.round",
         "punctuation.accessor",
         "punctuation.definition.dictionary",
         "punctuation.definition.block",
         "punctuation.definition.section",
+        "punctuation.section.array",
         "punctuation.separator.comma",
         "punctuation.separator",
+        "punctuation.terminator.expression",
         "punctuation.terminator.statement",
       ],
       "settings": {
@@ -76,7 +88,6 @@ const base = (type) => {
      */
     {
       "scope": [
-        "meta.embedded",
         "source.groovy.embedded"
       ],
       "settings": {
@@ -118,7 +129,8 @@ const base = (type) => {
     {
       "scope": "entity.other.attribute-name",
       "settings": {
-        "foreground": color.syntax.wisteria
+        "foreground": color.syntax.wisteria,
+        "fontStyle": fontstyle === 'italic' ? 'italic' : '',
       }
     },
     {
@@ -228,7 +240,8 @@ const base = (type) => {
         "storage.modifier",
       ],
       "settings": {
-        "foreground": color.syntax.turquoiseBlue
+        "foreground": color.syntax.turquoiseBlue,
+        "fontStyle": fontstyle === 'italic' ? 'italic' : '',
       }
     },
     {
@@ -291,19 +304,25 @@ const base = (type) => {
     {
       "scope": "keyword",
       "settings": {
-        "foreground": color.syntax.turquoiseBlue
+        "foreground": color.syntax.turquoiseBlue,
+        "fontStyle": fontstyle === 'italic' ? 'italic' : '',
       }
     },
     {
       "scope": "keyword.control",
       "settings": {
-        "foreground": color.syntax.turquoiseBlue
+        "foreground": color.syntax.turquoiseBlue,
+        "fontStyle": fontstyle === 'italic' ? 'italic' : '',
       }
     },
     {
-      "scope": "keyword.operator",
+      "scope": [
+        "keyword.operator",
+        "keyword.operator.assignment.compound",
+      ],
       "settings": {
-        "foreground": color.syntax.pinkish
+        "foreground": color.syntax.pinkish,
+        "fontStyle": '',
       }
     },
     {
@@ -365,16 +384,15 @@ const base = (type) => {
       "name": "this.self",
       "scope": "variable.language",
       "settings": {
-        "foreground": color.syntax.sand
+        "foreground": color.syntax.sand,
       }
     },
     {
       "name": "Function",
-      "scope": [
-        "entity.name.function"
-      ],
+      "scope": "entity.name.function",
       "settings": {
-        "foreground": color.syntax.tea
+        "foreground": color.syntax.tea,
+        "fontStyle": fontstyle === 'italic' ? 'italic' : '',
       }
     },
     {
@@ -459,12 +477,15 @@ const base = (type) => {
       }
     },
     {
-      "name": "Assignment Keyword",
       "scope": [
-        "keyword.operator.assignment"
+        "keyword.operator.new",
+        "keyword.operator.expression",
+        "keyword.operator.cast",
+        "keyword.operator.sizeof",
+        "keyword.operator.logical.python"
       ],
       "settings": {
-        "foreground": color.syntax.silver
+        "fontStyle": fontstyle === 'italic' ? 'italic' : '',
       }
     },
     {
@@ -477,6 +498,13 @@ const base = (type) => {
       ],
       "settings": {
         "foreground": color.syntax.turquoiseBlue
+      }
+    },
+    {
+      "name": "Constant Variable",
+      "scope": "variable.other.constant",
+      "settings": {
+        "fontStyle": fontstyle === 'italic' ? 'italic' : '',
       }
     },
     {

@@ -20,7 +20,7 @@ const colorDark = {
   alpha90: "E6",
   black: "#000000",
   debug: "#ff00aa",
-  white: "#FFFFFF",
+  white: "#E5E7E8",
   editor: {
     action: {
       activeSelectionBackground: "#324866",
@@ -46,23 +46,22 @@ const colorDark = {
     // A higher number means "closer to the user": at the top = brighter
     // A lower number means "further away from the user": at the bottom = darker
     surface: {
-      depth0: "#3E3E41", // quickInput, titleBar, dropdown
-      depth1: "#3C3C3E", // statusBar, sidebarSectionHeader, notificationCenterHeader
-      depth2: "#323233", // activityBar, notifications
-      depth3: "#282829", // sideBar, panel
-      depth4: "#232324", // editorWidget, editorGroupHeader.tabsBackground, breadcrumb
-      depth5: "#1E1E1F", // editor
-      depth6: "#161618", // input
-      depth7: "#141415", // peekViewEditor
+      depth0: "#3C3C3E", // quickInput, titleBar, dropdown, statusBar, sidebarSectionHeader, notificationCenterHeader
+      depth1: "#323233", // activityBar, notifications
+      depth2: "#282829", // sideBar, panel
+      depth3: "#232324", // editorWidget, editorGroupHeader.tabsBackground, breadcrumb
+      depth4: "#1E1E1F", // editor
+      depth5: "#161618", // input
+      depth6: "#141415", // peekViewEditor
       border: {
         depth0: "#0A0A0B",
         depth1: "#414143",
         depth2: "#4C4C4D",
-        depth3: "#59595A",
+        depth3: "#555558",
       },
     },
     text: {
-      default: "#C5C5C9",
+      default: "#BFC7CF",
       muted: "#8B949C",
     },
   },
@@ -92,7 +91,7 @@ const colorDark = {
     pinkish: '#D66A81',
     pinkishTan: '#CD926D',
     sand: '#D8C67E',
-    silver: '#C5C5C9', // Foreground/Text
+    silver: '#BFC7CF', // Foreground/Text
     tintedGray: '#8B949C', // Punctuation
     metallicBlue: '#55708B', // Comment
   },
