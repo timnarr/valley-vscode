@@ -7,6 +7,7 @@ const themes = [
     "theme": {
       "name": "Valley",
       "type": "dark",
+      "semanticHighlighting": true,
       ...editorColor,
       ...syntaxColor('normal')
     }
@@ -16,6 +17,7 @@ const themes = [
     "theme": {
       "name": "Valley Italic",
       "type": "dark",
+      "semanticHighlighting": true,
       ...editorColor,
       ...syntaxColor('italic')
     }
