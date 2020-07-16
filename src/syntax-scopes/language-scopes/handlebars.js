@@ -1,12 +1,9 @@
 import colorDark from '../../color_dark';
 import colorLight from '../../color_light';
 
-const handlebars = (type) => {
-  let color;
+const handlebars = (type, fontstyle) => {
 
-  if (type === 'dark') {
-    color = colorDark;
-  }
+  let color = colorDark;
 
   if (type === 'light') {
     color = colorLight;

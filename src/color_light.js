@@ -5,7 +5,7 @@ const colorLight = {
   alpha04: "0A",
   alpha05: "0D",
   alpha08: "14",
-  alpha10: "1a",
+  alpha10: "1A",
   alpha15: "26",
   alpha20: "33",
   alpha25: "40",
@@ -36,7 +36,7 @@ const colorLight = {
       primaryHover: "#96C7F8",
       search: "#E7BB5A",
       searchHighlight: "#E9BF3A",
-      secondary: "#D1AEE6",
+      secondary: "#9F55CB",
       selection: "#006AFF",
       tertiary: "#66D5AC",
       tertiaryHover: "#90DFC2",
@@ -46,25 +46,27 @@ const colorLight = {
     // A higher number means "closer to the user": at the top = brighter
     // A lower number means "further away from the user": at the bottom = darker
     surface: {
-      depth0: "#F5F5F5", // quickInput, titleBar, dropdown
-      depth1: "#F5F5F5", // statusBar, sidebarSectionHeader, notificationCenterHeader
-      depth2: "#EDEDEE", // activityBar, notifications
-      depth3: "#E5E5E6", // sideBar, panel
-      depth4: "#E2E2E4", // editorWidget, editorGroupHeader.tabsBackground, breadcrumb
-      depth5: "#F5F5F5", // editor
+      depth0: "#f0f2f5", // quickInput, titleBar, dropdown
+      depth1: "#f0f2f5", // statusBar, sidebarSectionHeader, notificationCenterHeader
+      depth2: "#E7EAEF", // activityBar, notifications
+      depth3: "#f0f2f5", // sideBar, panel
+      depth4: "#FFFFFF", // editorWidget, editorGroupHeader.tabsBackground, breadcrumb
+      depth5: "#FFFFFF", // editor
       depth6: "#FFFFFF", // input
-      depth7: "#D4D4D8", // peekViewEditor
+      depth7: "#E0E0E1", // peekViewEditor
       border: {
-        depth0: "#0A0A0B",
-        depth1: "#414143",
-        depth2: "#4C4C4D",
-        depth3: "#59595A",
+        depth0: "#0000aa",
+        depth1: "#D3D6DA",
+        depth2: "#00aa00",
+        depth3: "#C8CCD0",
       },
     },
-    text: {
-      default: "#1E1F20",
-      muted: "#8B949C",
-    },
+    ui: {
+      default: "#26292C",
+      muted: "#6E747B",
+      shadowHard: "#00000040",
+      shadowSoft: "#0000001A",
+    }
   },
   git: {
     addedIndicator: "#217962",
@@ -84,17 +86,17 @@ const colorLight = {
     untrackedResource: "#375EC8",
   },
   syntax: {
-    tea: '#1D7C37',
-    turquoiseBlue: '#0B687F',
-    darkSkyBlue: '#053A99',
-    wisteria: '#2E1890',
-    lavenderPink: '#CF0C98',
-    pinkish: '#9D0B2A',
-    pinkishTan: '#924311',
-    sand: '#AE8E0F',
-    silver: '#2D2D32', // Foreground/Text
-    tintedGray: '#2D2D32', // Punctuation
-    metallicBlue: '#55708B', // Comment
+    tea: '#418458',
+    turquoiseBlue: '#1380A6',
+    darkSkyBlue: '#326ce0',
+    wisteria: '#7064b8',
+    lavenderPink: '#C93DA1',
+    pinkish: '#c74560',
+    pinkishTan: '#A86642',
+    sand: '#877535',
+    silver: '#484C50', // Foreground/Text
+    tintedGray: '#6E747B', // Punctuation
+    metallicBlue: '#5D7892', // Comment
   },
   terminal: {
     ansiBlack: {

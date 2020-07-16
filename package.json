@@ -44,14 +44,19 @@
         "path": "./themes/valley_dark.json"
       },
       {
+        "label": "Valley Italic",
+        "uiTheme": "vs-dark",
+        "path": "./themes/valley_dark_italic.json"
+      },
+      {
         "label": "Valley Light",
         "uiTheme": "vs",
         "path": "./themes/valley_light.json"
       },
       {
-        "label": "Valley Italic",
-        "uiTheme": "vs-dark",
-        "path": "./themes/valley_dark_italic.json"
+        "label": "Valley Light Italic",
+        "uiTheme": "vs",
+        "path": "./themes/valley_light_italic.json"
       }
     ]
   },

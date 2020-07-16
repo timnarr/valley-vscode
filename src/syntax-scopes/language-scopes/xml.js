@@ -1,13 +1,9 @@
 import colorDark from '../../color_dark';
 import colorLight from '../../color_light';
 
-const xml = (type) => {
+const xml = (type, fontstyle) => {
 
-  let color;
-
-  if (type === 'dark') {
-    color = colorDark;
-  }
+  let color = colorDark;
 
   if (type === 'light') {
     color = colorLight;

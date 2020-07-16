@@ -1,12 +1,9 @@
 import colorDark from '../../color_dark';
 import colorLight from '../../color_light';
 
-const css = (type) => {
-  let color;
+const css = (type, fontstyle) => {
 
-  if (type === 'dark') {
-    color = colorDark;
-  }
+  let color = colorDark;
 
   if (type === 'light') {
     color = colorLight;

@@ -1,7 +1,7 @@
 import colorDark from '../color_dark';
 import colorLight from '../color_light';
 
-const base = (type) => {
+const base = (type, fontstyle) => {
 
   let color = colorDark;
 

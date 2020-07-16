@@ -13,15 +13,15 @@ const syntaxColor = (type, fontstyle) => {
   const syntaxColor = {
     tokenColors: [
       ...base(type, fontstyle),
-      ...css(type),
-      ...handlebars(type),
-      ...html(type),
-      ...javascript(type),
-      ...json(type),
-      ...markdown(type),
-      ...nunjucks(type),
-      ...twig(type),
-      ...xml(type),
+      ...css(type, fontstyle),
+      ...handlebars(type, fontstyle),
+      ...html(type, fontstyle),
+      ...javascript(type, fontstyle),
+      ...json(type, fontstyle),
+      ...markdown(type, fontstyle),
+      ...nunjucks(type, fontstyle),
+      ...twig(type, fontstyle),
+      ...xml(type, fontstyle),
     ]
   }
 
