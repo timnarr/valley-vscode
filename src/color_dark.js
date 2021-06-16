@@ -46,7 +46,7 @@ const colorDark = {
     // A higher number means "closer to the user": at the top = brighter
     // A lower number means "further away from the user": at the bottom = darker
     surface: {
-      depth0: "#3b3b3d", // quickInput, titleBar, dropdown, statusBar, sidebarSectionHeader, notificationCenterHeader
+      depth0: "#3b3b3d", // quickInput, titleBar, statusBar, sidebarSectionHeader, notificationCenterHeader
       depth1: "#313133", // activityBar, notifications
       depth2: "#272729", // sideBar, panel
       depth3: "#222224", // editorWidget, editorGroupHeader.tabsBackground, breadcrumb
@@ -65,6 +65,12 @@ const colorDark = {
       muted: "#8B949C",
       shadowHard: "#00000080",
       shadowSoft: "#00000040",
+      input: "#151517",
+      inputBorder: "#151517",
+      checkbox: "#151517",
+      checkboxBorder: "#151517",
+      dropdown: "#3b3b3d",
+      dropdownBorder: "#3b3b3d",
     }
   },
   git: {
@@ -94,7 +100,7 @@ const colorDark = {
     pinkishTan: '#CD926D',
     sand: '#D8C67E',
     silver: '#BFC7CF', // Foreground/Text
-    tintedGray: '#8B949C', // Punctuation
+    tintedGray: '#ff0000', //'#849CB4', // Punctuation
     metallicBlue: '#55708B', // Comment
   },
   terminal: {

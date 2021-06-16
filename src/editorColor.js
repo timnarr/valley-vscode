@@ -47,21 +47,21 @@ const editorColor = (type) => {
       "button.background": color.editor.action.primary,
       "button.foreground": color.black + color.alpha90,
       "button.hoverBackground": color.editor.action.primaryHover,
-      "checkbox.background": color.editor.surface.depth0,
+      "checkbox.background": color.editor.ui.checkbox,
       "checkbox.foreground": color.editor.action.primary,
-      "checkbox.border": color.editor.surface.depth0,
+      "checkbox.border": color.editor.ui.checkboxBorder,
 
       // Dropdown control
       // https://code.visualstudio.com/api/references/theme-color#dropdown-control
-      "dropdown.background": color.editor.surface.depth0,
-      "dropdown.listBackground": color.editor.surface.depth0,
-      "dropdown.border": color.editor.surface.depth0,
+      "dropdown.background": color.editor.ui.dropdown,
+      "dropdown.listBackground": color.editor.ui.dropdown,
+      "dropdown.border": color.editor.ui.dropdownBorder,
       "dropdown.foreground": color.editor.ui.default,
 
       // Input control
       // https://code.visualstudio.com/api/references/theme-color#input-control
-      "input.background": color.editor.surface.depth5,
-      "input.border": color.editor.surface.depth5,
+      "input.background": color.editor.ui.input,
+      "input.border": color.editor.ui.inputBorder,
       "input.foreground": color.editor.ui.default,
       "input.placeholderForeground": color.editor.ui.default + color.alpha50,
       "inputOption.activeBackground": color.editor.action.primary + color.alpha50,
@@ -122,7 +122,7 @@ const editorColor = (type) => {
       "activityBar.dropBackground": color.editor.action.selection + color.alpha40,
       "activityBar.foreground": color.editor.ui.default,
       "activityBar.inactiveForeground": color.editor.ui.default + color.alpha50,
-      "activityBar.border": color.editor.surface.border.depth1,
+      // "activityBar.border": "#E6E8EA",
       "activityBarBadge.background": color.editor.action.primary,
       "activityBarBadge.foreground": color.black + color.alpha90,
       "activityBar.activeBorder": color.editor.ui.default,
@@ -133,12 +133,12 @@ const editorColor = (type) => {
       // https://code.visualstudio.com/api/references/theme-color#side-bar
       "sideBar.background": color.editor.surface.depth3,
       "sideBar.foreground": color.editor.ui.default + color.alpha75,
-      "sideBar.border": color.editor.surface.border.depth1,
+      // "sideBar.border": "#E6E8EA",
       "sideBar.dropBackground": color.editor.action.selection + color.alpha40,
       "sideBarTitle.foreground": color.editor.ui.default,
       "sideBarSectionHeader.background": color.editor.surface.depth3,
       "sideBarSectionHeader.foreground": color.editor.ui.default,
-      "sideBarSectionHeader.border": color.editor.surface.border.depth1,
+      "sideBarSectionHeader.border": color.editor.surface.border.depth2,
 
       // Minimap
       // https://code.visualstudio.com/api/references/theme-color#minimap
@@ -174,7 +174,7 @@ const editorColor = (type) => {
       // "tab.unfocusedActiveBorderTop": "",
       "tab.inactiveBackground": color.editor.surface.depth3,
       "tab.unfocusedInactiveBackground": color.editor.surface.depth3,
-      "tab.inactiveForeground": color.editor.ui.default + color.alpha50,
+      "tab.inactiveForeground": color.editor.ui.default + color.alpha70,
       "tab.unfocusedActiveForeground": color.editor.ui.default + color.alpha60,
       "tab.unfocusedInactiveForeground": color.editor.ui.default + color.alpha30,
       "tab.hoverBackground": color.editor.surface.depth1,
@@ -223,7 +223,7 @@ const editorColor = (type) => {
       // ## Hover Highlight
       "editor.hoverHighlightBackground": color.editor.ui.default + color.alpha05,
       // ## Current Line
-      "editor.lineHighlightBackground": color.editor.ui.default + color.alpha03,
+      "editor.lineHighlightBackground": color.editor.action.currentLine + color.alpha03,
       // "editor.lineHighlightBorder": "",
       // ## Link
       "editorLink.activeForeground": color.editor.action.primaryHover,
@@ -351,9 +351,9 @@ const editorColor = (type) => {
 
       // # Panel
       // https://code.visualstudio.com/api/references/theme-color#panel-colors
-      "panel.background": color.editor.surface.depth3,
-      "panel.border": color.editor.surface.depth3,
-      "panel.dropBackground": color.editor.action.selection + color.alpha40,
+      "panel.background": color.editor.surface.depth4,
+      "panel.border": color.editor.surface.border.depth1,
+      "panel.dropBackground": color.editor.action.selection + color.alpha05,
       "panelTitle.activeBorder": color.editor.ui.default,
       "panelTitle.activeForeground":color.editor.ui.default,
       "panelTitle.inactiveForeground":color.editor.ui.default + color.alpha70,
@@ -366,7 +366,7 @@ const editorColor = (type) => {
       // https://code.visualstudio.com/api/references/theme-color#status-bar-colors
       "statusBar.background": color.editor.surface.depth1,
       "statusBar.foreground": color.editor.ui.default + color.alpha70,
-      "statusBar.border": color.editor.surface.border.depth1,
+      // "statusBar.border": "#E6E8EA",
       "statusBar.debuggingBackground": color.editor.action.debugging,
       "statusBar.debuggingForeground": color.black + color.alpha90,
       "statusBar.debuggingBorder": color.black + color.alpha00,
@@ -483,19 +483,19 @@ const editorColor = (type) => {
       // https://code.visualstudio.com/api/references/theme-color#settings-editor-colors
       "settings.headerForeground": color.editor.ui.default,
       "settings.modifiedItemIndicator": color.git.modifiedIndicator,
-      "settings.dropdownBackground": color.editor.surface.depth0,
+      "settings.dropdownBackground": color.editor.ui.dropdown,
       "settings.dropdownForeground": color.editor.ui.default,
-      "settings.dropdownBorder": color.editor.surface.depth0,
-      "settings.dropdownListBorder": color.editor.surface.border.depth3,
-      "settings.checkboxBackground": color.editor.surface.depth0,
+      "settings.dropdownBorder": color.editor.ui.dropdownBorder,
+      "settings.dropdownListBorder": color.editor.ui.dropdownBorder,
+      "settings.checkboxBackground": color.editor.ui.checkbox,
       "settings.checkboxForeground": color.editor.action.primary,
-      "settings.checkboxBorder": color.editor.surface.depth0,
-      "settings.textInputBackground": color.editor.surface.depth5,
+      "settings.checkboxBorder": color.editor.ui.checkboxBorder,
+      "settings.textInputBackground": color.editor.ui.input,
       "settings.textInputForeground": color.editor.ui.default,
-      "settings.textInputBorder": color.editor.surface.depth5,
-      "settings.numberInputBackground": color.editor.surface.depth5,
+      "settings.textInputBorder": color.editor.ui.inputBorder,
+      "settings.numberInputBackground": color.editor.ui.input,
       "settings.numberInputForeground": color.editor.ui.default,
-      "settings.numberInputBorder": color.editor.surface.depth5,
+      "settings.numberInputBorder": color.editor.ui.inputBorder,
 
       // # Breadcrumbs
       // https://code.visualstudio.com/api/references/theme-color#breadcrumbs

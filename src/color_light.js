@@ -23,21 +23,22 @@ const colorLight = {
   white: "#FFFFFF",
   editor: {
     action: {
-      activeSelectionBackground: "#324866",
-      activeSelectionForeground: "#FFFFFF",
+      activeSelectionBackground: "#BCD2FF",
+      activeSelectionForeground: "#6B9BFA",
+      currentLine: "#6B9BFA",
       debugging: "#D55975",
       errorBackground: "#C66783",
       errorForeground: "#EB4755",
-      focusBackground: "#2C4C7A",
-      focusForeground: "#8FBEFF",
+      focusBackground: "#6B9BFA",
+      focusForeground: "#B9DCFF",
       infoBackground: "#67A0C5",
       infoForeground: "#47A9EB",
-      primary: "#64AEF7",
-      primaryHover: "#96C7F8",
+      primary: "#6DB5FF",
+      primaryHover: "",
       search: "#E7BB5A",
       searchHighlight: "#E9BF3A",
       secondary: "#9F55CB",
-      selection: "#006AFF",
+      selection: "#47A2FF",
       tertiary: "#66D5AC",
       tertiaryHover: "#90DFC2",
       warningBackground: "#C58F67",
@@ -46,19 +47,29 @@ const colorLight = {
     // A higher number means "closer to the user": at the top = brighter
     // A lower number means "further away from the user": at the bottom = darker
     surface: {
-      depth0: "#f0f2f5", // quickInput, titleBar, dropdown
-      depth1: "#f0f2f5", // statusBar, sidebarSectionHeader, notificationCenterHeader
-      depth2: "#E7EAEF", // activityBar, notifications
-      depth3: "#f0f2f5", // sideBar, panel
-      depth4: "#FFFFFF", // editorWidget, editorGroupHeader.tabsBackground, breadcrumb
-      depth5: "#FFFFFF", // editor
+      // DATEI 14
+      depth0: "#EEF0F2", //"#FAFAFB", // "#F9FAFB", // quickInput, titleBar
+      depth1: "#DCE1E5", // "#DBDEE1", // "#EDF0F2", // statusBar, notificationCenterHeader
+      depth2: "#E9ECEE", //"#EDEFF2" // activityBar, notifications
+      depth3: "#F4F5F6", //"#F6F7F8" // sideBar, panel
+      depth4: "#FFFFFF", // "#F7F8F8", // "#F2F4F7", // editor, editorWidget, editorGroupHeader.tabsBackground, breadcrumb
+      depth5: "#FFFFFF", // "#F7F8F8", // "#F2F4F7", // editor
       depth6: "#FFFFFF", // input
       depth7: "#E0E0E1", // peekViewEditor
+      // DATEI 13
+      // depth0: "#F9FAFB", // "#F9FAFB", // quickInput, titleBar
+      // depth1: "#EDF0F2", // "#EDF0F2", // statusBar, notificationCenterHeader
+      // depth2: "#EDF0F2", // "#EDF0F2", // activityBar, notifications
+      // depth3: "#E8EBED", // "#E7EBEE", // sideBar, panel
+      // depth4: "#F6F7F9", // "#F2F4F7", // editor, editorWidget, editorGroupHeader.tabsBackground, breadcrumb
+      // depth5: "#F6F7F9", // "#F2F4F7", // editor
+      // depth6: "#FFFFFF", // input
+      // depth7: "#E0E0E1", // peekViewEditor
       border: {
-        depth0: "#0000aa",
-        depth1: "#D3D6DA",
-        depth2: "#00aa00",
-        depth3: "#C8CCD0",
+        depth0: "#D2D6DA", // editorGroup, diffEditor
+        depth1: "#D2D6DA", // activityBar, sideBar
+        depth2: "#D2D6DA",
+        depth3: "#D2D6DA",
       },
     },
     ui: {
@@ -66,6 +77,12 @@ const colorLight = {
       muted: "#6E747B",
       shadowHard: "#00000040",
       shadowSoft: "#0000001A",
+      input: "#FFFFFF",
+      inputBorder: "#DBE0E6",
+      checkbox: "#DBE0E6",
+      checkboxBorder: "#DBE0E6",
+      dropdown: "#DBE0E6",
+      dropdownBorder: "#DBE0E6",
     }
   },
   git: {
@@ -86,17 +103,17 @@ const colorLight = {
     untrackedResource: "#375EC8",
   },
   syntax: {
-    tea: '#418458',
-    turquoiseBlue: '#1380A6',
-    darkSkyBlue: '#326ce0',
-    wisteria: '#7064b8',
-    lavenderPink: '#C93DA1',
-    pinkish: '#c74560',
-    pinkishTan: '#A86642',
-    sand: '#877535',
-    silver: '#484C50', // Foreground/Text
-    tintedGray: '#6E747B', // Punctuation
-    metallicBlue: '#5D7892', // Comment
+    tea: '#048145', // '#04813B', //#05893F',
+    turquoiseBlue: '#0978A2', //#007A97', //'#0081A0',
+    darkSkyBlue: '#215DFE', //'#1966F0', //'#1B6DFE',
+    wisteria: '#7052F4', //'#7657FF',
+    lavenderPink: '#D2019B', //'#DE00A3',
+    pinkish: '#DC1641', // '#E71845',
+    pinkishTan: '#B35405', // '#BE5A06',
+    sand: '#846F00', // '#9B8711',
+    silver: '#414448', // Foreground/Text
+    tintedGray: '#414448', // Punctuation
+    metallicBlue: '#587999', // Comment
   },
   terminal: {
     ansiBlack: {
@@ -104,23 +121,23 @@ const colorLight = {
       bright: '#656567'
     },
     ansiBlue: {
-      normal: '#5B89DB',
+      normal: '#1B6DFE',
       bright: '#91B7F8'
     },
     ansiCyan: {
-      normal: '#57B6CD',
+      normal: '#0081A0',
       bright: '#84DCF0'
     },
     ansiGreen: {
-      normal: '#78B98A',
+      normal: '#05893F',
       bright: '#A0E4B2'
     },
     ansiMagenta: {
-      normal: '#DF91CA',
+      normal: '#DE00A3',
       bright: '#FACCEE'
     },
     ansiRed: {
-      normal: '#D66A81',
+      normal: '#E71845',
       bright: '#F59EB1'
     },
     ansiWhite: {
@@ -128,7 +145,7 @@ const colorLight = {
       bright: '#FAFAFA'
     },
     ansiYellow: {
-      normal: '#D8C67E',
+      normal: '#9B8711',
       bright: '#F5E8B2'
     },
   },

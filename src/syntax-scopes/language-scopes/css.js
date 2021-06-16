@@ -35,9 +35,8 @@ const css = (type, fontstyle) => {
     {
       "name": "Punctuation",
       "scope": [
-        "source.css meta.at-rule.include.scss",
-        "source.css meta.at-rule.mixin.scss",
         "source.css meta.definition.variable.map",
+        // "source.css punctuation.definition.media-query",
         "source.css punctuation.definition.attribute-selector.begin.bracket.square",
         "source.css punctuation.definition.attribute-selector.end.bracket.square",
         "source.css punctuation.definition.begin.bracket.round",

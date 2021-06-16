@@ -15,7 +15,7 @@
   },
   "homepage": "https://github.com/TimGr/valley-vscode",
   "scripts": {
-    "build": "node -r esm build.js"
+    "build": "npm i && node -r esm build.js"
   },
   "galleryBanner": {
     "color": "#1E1E1F",
@@ -61,8 +61,6 @@
     ]
   },
   "devDependencies": {
-    "esm": "^3.2.25",
-    "get-contrast": "^2.0.0",
-    "prettyoutput": "^1.2.0"
+    "esm": "^3.2.25"
   }
 }
