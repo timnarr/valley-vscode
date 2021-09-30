@@ -24,6 +24,31 @@ const cssSyntax = [
     }
   },
   {
+    "name": "Base Text",
+    "scope": [
+      "source.css.scss",
+      "source.css.scss meta.property-list.scss meta.property-value.scss",
+      "source.css.scss meta.property-list.scss meta.at-rule.each.scss",
+      "source.css.scss meta.property-list.scss meta.at-rule.return.scss",
+      "source.css.scss meta.property-list.scss constant.other.scss",
+    ],
+    "settings": {
+      "foreground": color.syntax.tintedGray
+    }
+  },
+  {
+    "name": "Properties + Resets",
+    "scope": [
+      "source.css.scss meta.property-list.scss",
+      "source.css.scss meta.property-name.scss support.type.property-name.css",
+      "source.css.scss meta.property-name.scss support.type.vendored.property-name.css",
+      "source.css.scss meta.property-list.scss meta.at-rule.keyframes.scss entity.other.attribute-name.scss"
+    ],
+    "settings": {
+      "foreground": color.syntax.silver
+    }
+  },
+  {
     "name": "Punctuation",
     "scope": [
       "source.css meta.at-rule.include.scss",
@@ -128,7 +153,7 @@ const cssSyntax = [
       "support.constant.vendored.property-value.css"
     ],
     "settings": {
-      "foreground": color.syntax.silver
+      "foreground": color.syntax.tintedGray
     }
   },
   {

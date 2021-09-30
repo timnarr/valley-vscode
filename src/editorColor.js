@@ -17,6 +17,7 @@ const editorColor = {
     "descriptionForeground": color.editor.text.muted,
     "errorForeground": color.editor.action.errorForeground,
     "icon.foreground": color.editor.text.default,
+    "sash.hoverBorder": color.editor.action.selection,
 
     // Window border
     // https://code.visualstudio.com/api/references/theme-color#window-border
@@ -33,11 +34,21 @@ const editorColor = {
     "textPreformat.foreground": color.editor.action.secondary,
     "textSeparator.foreground": color.editor.surface.depth2,
 
+    // Action colors
+    // https://code.visualstudio.com/api/references/theme-color#action-colors
+    "toolbar.hoverBackground": color.white + color.alpha10,
+    // "toolbar.hoverOutline": "",
+    "toolbar.activeBackground":color.editor.action.focusBackground + color.alpha60,
+
     // Button control
     // https://code.visualstudio.com/api/references/theme-color#button-control
     "button.background": color.editor.action.primary,
     "button.foreground": color.black + color.alpha90,
+    // "button.border": "",
     "button.hoverBackground": color.editor.action.primaryHover,
+    "button.secondaryForeground": color.black + color.alpha90,
+    "button.secondaryBackground": color.editor.action.secondary,
+    "button.secondaryHoverBackground": color.editor.action.secondaryHover,
     "checkbox.background": color.editor.surface.depth0,
     "checkbox.foreground": color.editor.action.primary,
     "checkbox.border": color.editor.surface.depth0,
@@ -57,6 +68,7 @@ const editorColor = {
     "input.placeholderForeground": color.editor.text.default + color.alpha50,
     "inputOption.activeBackground": color.editor.action.primary + color.alpha50,
     // "inputOption.activeBorder": "",
+    // "inputOption.activeForeground": "",
     "inputValidation.errorBackground": color.editor.action.errorBackground,
     "inputValidation.errorForeground": color.black + color.alpha90,
     "inputValidation.errorBorder": color.editor.action.errorBackground,
@@ -87,16 +99,20 @@ const editorColor = {
     // https://code.visualstudio.com/api/references/theme-color#lists-and-trees
     "list.activeSelectionBackground": color.editor.action.activeSelectionBackground,
     "list.activeSelectionForeground": color.editor.action.activeSelectionForeground,
+    "list.activeSelectionIconForeground": color.editor.action.activeSelectionForeground,
     "list.dropBackground": color.editor.action.selection + color.alpha40,
     "list.focusBackground": color.editor.action.focusBackground,
     "list.focusForeground": color.editor.action.focusForeground,
+    "list.focusHighlightForeground": color.editor.action.focusForeground,
+    // "list.focusOutline": "",
     "list.highlightForeground": color.editor.action.searchHighlight,
     "list.hoverBackground": color.white + color.alpha04,
     "list.hoverForeground": color.white,
     "list.inactiveSelectionBackground": color.white + color.alpha08,
     "list.inactiveSelectionForeground": color.white,
+    "list.inactiveSelectionIconForeground": color.white,
     // "list.inactiveFocusBackground": "",
-
+    // "list.inactiveFocusOutline": "",
     "list.invalidItemForeground": color.editor.action.errorForeground,
     "list.errorForeground": color.editor.action.errorForeground,
     "list.warningForeground": color.editor.action.warningForeground,
@@ -105,12 +121,14 @@ const editorColor = {
     "listFilterWidget.noMatchesOutline": color.editor.surface.depth0,
     "list.filterMatchBackground": color.editor.action.search + color.alpha30,
     "list.filterMatchBorder": color.editor.action.search,
+    // "list.deemphasizedForeground": "",
     "tree.indentGuidesStroke": color.white + color.alpha15,
+    // "tree.tableColumnsBorder": "",
 
     // Activity Bar
     // https://code.visualstudio.com/api/references/theme-color#activity-bar
     "activityBar.background": color.editor.surface.depth1,
-    "activityBar.dropBackground": color.editor.action.selection + color.alpha40,
+    "activityBar.dropBorder": color.editor.action.selection,
     "activityBar.foreground": color.editor.text.default,
     "activityBar.inactiveForeground": color.editor.text.default + color.alpha50,
     // "activityBar.border": "",
@@ -161,8 +179,9 @@ const editorColor = {
     "tab.border": color.editor.surface.depth3,
     // "tab.activeBorder": "",
     // "tab.unfocusedActiveBorder": "",
-    // "tab.activeBorderTop": "",
+    "tab.activeBorderTop": color.editor.action.primary,
     // "tab.unfocusedActiveBorderTop": "",
+    "tab.lastPinnedBorder": color.editor.surface.depth0,
     "tab.inactiveBackground": color.editor.surface.depth3,
     "tab.unfocusedInactiveBackground": color.editor.surface.depth3,
     "tab.inactiveForeground": color.white + color.alpha50,
@@ -229,8 +248,12 @@ const editorColor = {
     // ## Indent Guides
     "editorIndentGuide.background": color.white + color.alpha05,
     "editorIndentGuide.activeBackground": color.white + color.alpha15,
+    // ## Inline Hints
+    "editorInlayHint.background": color.editor.surface.depth2,
+    "editorInlayHint.foreground": color.editor.text.muted,
     // ## Rulers
     "editorRuler.foreground": color.white + color.alpha05,
+    "editor.linkedEditingBackground": color.editor.action.selection + color.alpha25,
     // ## CodeLens
     "editorCodeLens.foreground": color.editor.text.default + color.alpha70,
     // ## Lightbulb
@@ -239,9 +262,17 @@ const editorColor = {
     // ## Bracket matches
     "editorBracketMatch.background": color.white + color.alpha20,
     "editorBracketMatch.border": color.black + color.alpha00,
+    "editorBracketHighlight.foreground1": color.terminal.ansiGreen.bright,
+    "editorBracketHighlight.foreground2": color.terminal.ansiCyan.bright,
+    "editorBracketHighlight.foreground3": color.terminal.ansiBlue.bright,
+    "editorBracketHighlight.foreground4": color.terminal.ansiMagenta.bright,
+    "editorBracketHighlight.foreground5": color.terminal.ansiRed.bright,
+    "editorBracketHighlight.foreground6": color.terminal.ansiYellow.bright,
+    "editorBracketHighlight.unexpectedBracket.foreground": color.editor.action.errorForeground,
     // ## Folding
     "editor.foldBackground": color.editor.text.default + color.alpha10,
     // ## Overview ruler
+    // "editorOverviewRuler.background": "",
     "editorOverviewRuler.border": color.white + color.alpha00,
     "editorOverviewRuler.findMatchForeground": color.editor.action.search + color.alpha25,
     "editorOverviewRuler.rangeHighlightForeground": "",
@@ -258,10 +289,13 @@ const editorColor = {
     // ## Error and Warnings
     "editorError.foreground": color.editor.action.errorForeground,
     // "editorError.border": "",
+    // "editorError.background": "",
     "editorWarning.foreground": color.editor.action.warningForeground,
     // "editorWarning.border": "",
+    // "editorWarning.background": "",
     "editorInfo.foreground": color.editor.action.infoForeground,
     // "editorInfo.border": "",
+    "editorInfo.background": color.editor.action.infoBackground,
     "editorHint.foreground": color.syntax.tintedGray,
     // "editorHint.border": "",
     "problemsErrorIcon.foreground": color.editor.action.errorForeground,
@@ -276,6 +310,7 @@ const editorColor = {
     "editorGutter.addedBackground": color.git.modifiedIndicator,
     "editorGutter.deletedBackground": color.git.deletedIndicator,
     // "editorGutter.commentRangeForeground": "",
+    "editorGutter.foldingControlForeground": color.editor.action.primary,
 
     // # Diff editor colors
     // https://code.visualstudio.com/api/references/theme-color#diff-editor-colors
@@ -284,6 +319,7 @@ const editorColor = {
     "diffEditor.removedTextBackground": color.git.diffRemoved + color.alpha15,
     // "diffEditor.removedTextBorder": "",
     "diffEditor.border": color.editor.surface.border.depth0,
+    "diffEditor.diagonalFill": color.editor.text.default + color.alpha40,
 
     // # Editor widget colors
     // https://code.visualstudio.com/api/references/theme-color#editor-widget-colors
@@ -295,12 +331,17 @@ const editorColor = {
     "editorSuggestWidget.background": color.editor.surface.depth0,
     "editorSuggestWidget.border": color.editor.surface.depth0,
     "editorSuggestWidget.foreground": color.editor.text.default,
+    "editorSuggestWidget.focusHighlightForeground": color.editor.action.searchHighlight,
     "editorSuggestWidget.highlightForeground": color.editor.action.searchHighlight,
     "editorSuggestWidget.selectedBackground": color.editor.action.selection + color.alpha25,
-
+    // "editorSuggestWidget.selectedForeground": "",
+    // "editorSuggestWidget.selectedIconForeground": "",
+    "editorHoverWidget.foreground": color.editor.text.default,
     "editorHoverWidget.background": color.editor.surface.depth0,
     "editorHoverWidget.border": color.editor.surface.depth0,
     "editorHoverWidget.statusBarBackground": color.editor.surface.depth0,
+    // "editorGhostText.border": "",
+    // "editorGhostText.foreground": "",
     // ## Debug Exception widget
     "debugExceptionWidget.background": color.editor.surface.depth4,
     "debugExceptionWidget.border": color.editor.surface.depth0,
@@ -309,6 +350,9 @@ const editorColor = {
     "editorMarkerNavigationError.background": color.editor.action.errorBackground,
     "editorMarkerNavigationWarning.background": color.editor.action.warningBackground,
     "editorMarkerNavigationInfo.background": color.editor.action.infoBackground,
+    "editorMarkerNavigationError.headerBackground": color.editor.action.errorBackground + color.alpha20,
+    "editorMarkerNavigationWarning.headerBackground": color.editor.action.warningBackground + color.alpha20,
+    "editorMarkerNavigationInfo.headerBackground": color.editor.action.infoBackground + color.alpha20,
 
     // # Peek View colors
     // https://code.visualstudio.com/api/references/theme-color#peek-view-colors
@@ -344,14 +388,16 @@ const editorColor = {
     // https://code.visualstudio.com/api/references/theme-color#panel-colors
     "panel.background": color.editor.surface.depth2,
     "panel.border": color.white + color.alpha02,
-    "panel.dropBackground": color.editor.action.selection + color.alpha40,
+    "panel.dropBorder": color.editor.action.selection,
     "panelTitle.activeBorder": color.editor.text.default,
     "panelTitle.activeForeground":color.editor.text.default,
     "panelTitle.inactiveForeground":color.editor.text.default + color.alpha70,
     // "panelInput.border": "",
-
-    // ## Preview
-    // "imagePreview.border": "",
+    // "panelSection.border": "",
+    "panelSection.dropBackground": color.editor.action.selection + color.alpha40,
+    // "panelSectionHeader.background": "",
+    // "panelSectionHeader.foreground": "",
+    // "panelSectionHeader.border": "",
 
     // # Statusbar
     // https://code.visualstudio.com/api/references/theme-color#status-bar-colors
@@ -360,17 +406,21 @@ const editorColor = {
     // "statusBar.border": "",
     "statusBar.debuggingBackground": color.editor.action.debugging,
     "statusBar.debuggingForeground": color.black + color.alpha90,
-    "statusBar.debuggingBorder": color.black + color.alpha00,
+    // "statusBar.debuggingBorder": "",
     "statusBar.noFolderForeground": color.editor.text.default + color.alpha70,
     "statusBar.noFolderBackground": color.editor.surface.depth0,
     // "statusBar.noFolderBorder": "",
     "statusBarItem.activeBackground": color.white + color.alpha20,
-    "statusBarItem.hoverBackground": color.white + color.alpha05,
+    "statusBarItem.hoverBackground": color.white + color.alpha10,
     "statusBarItem.prominentForeground": color.black + color.alpha90,
     "statusBarItem.prominentBackground": color.editor.action.primary,
     "statusBarItem.prominentHoverBackground": color.white + color.alpha05,
     "statusBarItem.remoteBackground": color.editor.action.tertiary,
     "statusBarItem.remoteForeground": color.black + color.alpha90,
+    "statusBarItem.errorBackground": color.editor.action.errorBackground,
+    "statusBarItem.errorForeground": color.editor.action.errorForeground,
+    "statusBarItem.warningBackground": color.editor.action.warningBackground,
+    "statusBarItem.warningForeground": color.editor.action.warningForeground,
 
     // # Title Bar colors
     // https://code.visualstudio.com/api/references/theme-color#title-bar-colors
@@ -407,6 +457,11 @@ const editorColor = {
     "notificationsWarningIcon.foreground": color.editor.action.warningForeground,
     "notificationsInfoIcon.foreground": color.editor.action.infoForeground,
 
+    // # Banner
+    // "banner.background": "",
+    // "banner.foreground": "",
+    // "banner.iconForeground": "",
+
     // # Extensions
     // https://code.visualstudio.com/api/references/theme-color#extensions
     "extensionButton.prominentForeground": color.black + color.alpha90,
@@ -414,6 +469,7 @@ const editorColor = {
     "extensionButton.prominentHoverBackground": color.editor.action.tertiaryHover,
     "extensionBadge.remoteBackground": color.editor.action.debugging,
     "extensionBadge.remoteForeground": color.black + color.alpha90,
+    "extensionIcon.starForeground": color.editor.action.extensionStar,
 
     // # Quick picker
     // https://code.visualstudio.com/api/references/theme-color#quick-picker
@@ -421,11 +477,22 @@ const editorColor = {
     "pickerGroup.foreground": color.editor.action.secondary,
     "quickInput.background": color.editor.surface.depth0,
     "quickInput.foreground": color.editor.text.default,
+    "quickInputList.focusBackground": color.editor.action.activeSelectionBackground,
+    "quickInputList.focusForeground": color.editor.action.primary,
+    "quickInputList.focusIconForeground": color.editor.action.primary,
+    // "quickInputTitle.background": "",
+
+    // # Keybinding label
+    "keybindingLabel.background": color.white + color.alpha10,
+    "keybindingLabel.foreground": color.editor.text.default,
+    // "keybindingLabel.border": "",
+    "keybindingLabel.bottomBorder": color.black + color.alpha30,
 
     // # Terminal
     // https://code.visualstudio.com/api/references/theme-color#integrated-terminal-colors
     "terminal.background": color.editor.surface.depth4,
     "terminal.border": color.editor.surface.border.depth1,
+    // "terminal.foreground": "",
     "terminal.ansiBlack": color.terminal.ansiBlack.normal,
     "terminal.ansiBlue": color.terminal.ansiBlue.normal,
     "terminal.ansiBrightBlack": color.terminal.ansiBlack.bright,
@@ -445,6 +512,8 @@ const editorColor = {
     "terminal.selectionBackground": color.editor.action.selection + color.alpha40,
     "terminalCursor.background": color.editor.text.default,
     "terminalCursor.foreground": color.editor.action.primary,
+    "terminal.dropBackground": color.editor.action.selection + color.alpha40,
+    "terminal.tab.activeBorder": color.editor.text.default,
 
     // # Debug
     // https://code.visualstudio.com/api/references/theme-color#debug
@@ -452,19 +521,60 @@ const editorColor = {
     // "debugToolBar.border": "",
     "editor.stackFrameHighlightBackground": color.editor.action.selection + color.alpha25,
     "editor.focusedStackFrameHighlightBackground": color.editor.action.selection + color.alpha40,
+    "editor.inlineValuesForeground": color.editor.action.warningForeground + color.alpha90,
+    "editor.inlineValuesBackground": color.editor.action.warningBackground + color.alpha15,
+    // "debugView.exceptionLabelForeground": "",
+    // "debugView.exceptionLabelBackground": "",
+    "debugView.stateLabelForeground": color.black + color.alpha90,
+    "debugView.stateLabelBackground": color.editor.action.debugging,
+    // "debugView.valueChangedHighlight": "",
+    "debugTokenExpression.name": color.syntax.turquoiseBlue,
+    "debugTokenExpression.value": color.syntax.wisteria,
+    "debugTokenExpression.string": color.syntax.pinkishTan,
+    "debugTokenExpression.boolean": color.syntax.lavenderPink,
+    "debugTokenExpression.number": color.syntax.darkSkyBlue,
+    "debugTokenExpression.error": color.editor.action.errorForeground,
+
+    // # Testing
+    // https://code.visualstudio.com/api/references/theme-color#testing-colors
+    // "testing.iconFailed": "",
+    // "testing.iconErrored": "",
+    // "testing.iconPassed": "",
+    // "testing.runAction": "",
+    // "testing.iconQueued": "",
+    // "testing.iconUnset": "",
+    // "testing.iconSkipped": "",
+    // "testing.peekBorder": "",
+    // "testing.peekHeaderBackground": "",
+    // "testing.message.error.decorationForeground": "",
+    // "testing.message.error.lineBackground": "",
+    // "testing.message.info.decorationForeground": "",
+    // "testing.message.info.lineBackground": "",
 
     // # Welcome Page
     // https://code.visualstudio.com/api/references/theme-color#welcome-page
     "welcomePage.background": color.editor.surface.depth4,
     "welcomePage.buttonBackground": color.editor.surface.depth2,
     "welcomePage.buttonHoverBackground": color.editor.surface.depth1,
+    "welcomePage.progress.background": color.editor.surface.depth2,
+    "welcomePage.progress.foreground": color.editor.action.primary,
+    "welcomePage.tileBackground": color.editor.surface.depth2,
+    "welcomePage.tileHoverBackground": color.editor.surface.depth1,
+    "welcomePage.tileShadow": color.black + color.alpha00,
     "walkThrough.embeddedEditorBackground": color.editor.surface.depth6,
+
+    // # Source Control
+    // https://code.visualstudio.com/api/references/theme-color#source-control-colors
+    // "scm.providerBorder": "",
 
     // # Git colors
     // https://code.visualstudio.com/api/references/theme-color#git-colors
     "gitDecoration.addedResourceForeground": color.git.addedResource,
     "gitDecoration.modifiedResourceForeground": color.git.modifiedResource,
     "gitDecoration.deletedResourceForeground": color.git.deletedResource,
+    "gitDecoration.renamedResourceForeground": color.git.modifiedResource,
+    "gitDecoration.stageModifiedResourceForeground": color.git.modifiedResource,
+    "gitDecoration.stageDeletedResourceForeground": color.git.deletedResource,
     "gitDecoration.untrackedResourceForeground": color.git.untrackedResource,
     "gitDecoration.ignoredResourceForeground": color.git.ignoredResource,
     "gitDecoration.conflictingResourceForeground": color.git.conflictingResource,
@@ -481,12 +591,15 @@ const editorColor = {
     "settings.checkboxBackground": color.editor.surface.depth0,
     "settings.checkboxForeground": color.editor.action.primary,
     "settings.checkboxBorder": color.editor.surface.depth0,
+    "settings.rowHoverBackground": color.editor.surface.depth2,
     "settings.textInputBackground": color.editor.surface.depth5,
     "settings.textInputForeground": color.editor.text.default,
     "settings.textInputBorder": color.editor.surface.depth5,
     "settings.numberInputBackground": color.editor.surface.depth5,
     "settings.numberInputForeground": color.editor.text.default,
     "settings.numberInputBorder": color.editor.surface.depth5,
+    "settings.focusedRowBackground": color.editor.action.focusBackground + color.alpha40,
+    "settings.focusedRowBorder": color.editor.action.primary + color.alpha40,
 
     // # Breadcrumbs
     // https://code.visualstudio.com/api/references/theme-color#breadcrumbs
@@ -556,6 +669,50 @@ const editorColor = {
     "debugIcon.stepOutForeground": color.syntax.turquoiseBlue,
     "debugIcon.continueForeground": color.syntax.tea,
     "debugIcon.stepBackForeground": color.syntax.turquoiseBlue,
+    "debugConsole.infoForeground": color.editor.action.infoForeground,
+    "debugConsole.warningForeground": color.editor.action.warningForeground,
+    "debugConsole.errorForeground": color.editor.action.errorForeground,
+    // "debugConsole.sourceForeground": "",
+    // "debugConsoleInputIcon.foreground": "",
+
+    // # Notebook
+    // https://code.visualstudio.com/api/references/theme-color#notebook-colors
+    // "notebook.cellBorderColor": "",
+    // "notebook.cellHoverBackground": "",
+    // "notebook.cellInsertionIndicator": "",
+    // "notebook.cellStatusBarItemHoverBackground": "",
+    // "notebook.cellToolbarSeparator": "",
+    // "notebook.cellEditorBackground": "",
+    // "notebook.focusedCellBackground": "",
+    // "notebook.focusedCellBorder": "",
+    // "notebook.focusedEditorBorder": "",
+    // "notebook.inactiveFocusedCellBorder": "",
+    // "notebook.inactiveSelectedCellBorder": "",
+    // "notebook.outputContainerBackgroundColor": "",
+    // "notebook.selectedCellBackground": "",
+    // "notebook.selectedCellBorder": "",
+    // "notebook.symbolHighlightBackground": "",
+    // "notebookScrollbarSlider.activeBackground": "",
+    // "notebookScrollbarSlider.background": "",
+    // "notebookScrollbarSlider.hoverBackground": "",
+    // "notebookStatusErrorIcon.foreground": "",
+    // "notebookStatusRunningIcon.foreground": "",
+    // "notebookStatusSuccessIcon.foreground": "",
+
+    // # Chart
+    // https://code.visualstudio.com/api/references/theme-color#chart-colors
+    "charts.foreground": color.editor.text.default,
+    "charts.lines": color.editor.text.muted,
+    "charts.red": color.syntax.pinkish,
+    "charts.blue": color.syntax.darkSkyBlue,
+    "charts.yellow": color.syntax.sand,
+    "charts.orange": color.syntax.pinkishTan,
+    "charts.green": color.syntax.tea,
+    "charts.purple": color.syntax.wisteria,
+
+    // # Ports
+    // https://code.visualstudio.com/api/references/theme-color#ports-colors
+    // "ports.iconRunningProcessForeground": "",
   }
 };
 

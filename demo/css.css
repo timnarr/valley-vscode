@@ -56,7 +56,8 @@ li:nth-child(3),
 
 /* Character escaping */
 #u-width--50\@l,
-.u-width--50\@l {
+.u-width--50\@l,
+.u-width--50\:l {
   width: 16.66666667%;
 }
 

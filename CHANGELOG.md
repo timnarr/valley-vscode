@@ -3,6 +3,20 @@ All notable changes to "Valley" will be documented in this file.
 
 ***
 
+## 0.4.0 - September 30, 2021
+`Changed`
+- Added all the new theme color options which were added from the VSCode team in the last year and added the following (mostly smaller) improvements
+  - Added default colors for the new "bracket pair colorization" feature
+  - Added colors for secondary buttons
+  - Improved list colors states like (focus, in-/active selection)
+  - Added "inline hint" colors
+  - Unified and improved drop borders for scaling sidebars, terminal view etc.
+  - Improved keybinding colors for command palette
+  - Different color improvements for debugging views
+  - and other small color improvements
+- Highlighting the current tab with a thin blue border
+- Improved punctutation styles in scss/css
+
 ## 0.3.0 - June 16, 2020
 `Changed`
 - Enabled "semanticHighlighting" by default
@@ -14,7 +28,7 @@ All notable changes to "Valley" will be documented in this file.
 - Italic theme introduced
 
 `Changed`
-- Removed "meta.embedded" from the puncutation style and added detailed scopes for punctuation to work correctly in PHP
+- Removed "meta.embedded" from the punctutation style and added detailed scopes for punctuation to work correctly in PHP
 
 ## 0.1.4 - April 01, 2020
 `Changed`

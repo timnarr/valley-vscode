@@ -3,7 +3,6 @@
  */
 
 const contrast = require('get-contrast');
-const prettyOutput = require('prettyoutput')
 import color from '../src/color';
 
 const check = (colorA, colorB) => {
@@ -75,4 +74,4 @@ const tests = [{
   },
 ];
 
-console.log(prettyOutput(tests))
+console.log(tests)
