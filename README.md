@@ -3,8 +3,9 @@
   # Valley Theme for Visual Studio Code
   [Valley](https://marketplace.visualstudio.com/items?itemName=TimGrochowski.valley-vscode) is a simple theme for Visual Studio Code without visual noise. Created with handpicked and vivid colors, appropriate contrast and a lot of love to help you focus on your code.
 
-  ![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/TimGrochowski.valley-vscode?color=%2366D5AC&label=Theme%20Version&logo=Visual%20Studio%20Code&style=for-the-badge)
-  ![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/TimGrochowski.valley-vscode?color=%2364AEF7&label=installs&logo=Visual%20Studio%20Code&style=for-the-badge)
+  ![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/TimGrochowski.valley-vscode?color=%2357b6cd&label=Theme%20Version&logo=Visual%20Studio%20Code&style=for-the-badge)
+  ![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/TimGrochowski.valley-vscode?color=%235b89db&label=installs&logo=Visual%20Studio%20Code&style=for-the-badge)
+  [![Preview in vscode.dev](https://img.shields.io/badge/preview%20in-vscode.dev-blue?color=%239285cc&logo=Visual%20Studio%20Code&style=for-the-badge)](https://vscode.dev/theme/timgrochowski.valley-vscode)
 
   ![Valley screenshot](https://github.com/TimGr/valley-vscode/blob/master/screenshots/valley-vscode-title.png?raw=true)
 
