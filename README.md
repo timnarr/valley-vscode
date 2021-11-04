@@ -93,7 +93,7 @@ If you have any suggestions, feedback or if you found a bug, please [file an iss
 
 ## 👪 Valley Adoptions
 - [Valley for iTerm2](https://github.com/TimGr/valley-iterm)
-
+- [Valley for Windows Terminal, by Carl Hartshorn](https://github.com/carl-hartshorn/valley-windowsterminal)
 ## 🔧 Tools
 I have used a lot of great tools that have helped me to create this theme:
 - [whocanuse.com](https://whocanuse.com/)
