@@ -31,7 +31,7 @@
 **and if you like Valley rate it or write a review in the [marketplace](https://marketplace.visualstudio.com/items?itemName=TimGrochowski.valley-vscode&ssr=false#review-details)** ✨
 
 ## 🌄 Screenshots
-You can find more screenshots [here](https://github.com/TimGr/valley-vscode/blob/master/screenshots.md).
+You can find more screenshots [here](https://github.com/TimGr/valley-vscode/blob/master/screenshots.md). **Or even better: Use the Theme Tester Playground [here](https://vscode.dev/theme/timgrochowski.valley-vscode).**
 
 **Vivid and pleasant syntax color palette for long coding sessions.**
 
