@@ -19,7 +19,6 @@ const color = {
   alpha80: "CC",
   alpha90: "E6",
   black: "#000000",
-  debug: "#ff00aa",
   white: "#E5E7E8",
   editor: {
     action: {
@@ -46,16 +45,15 @@ const color = {
       warningBackground: "#C58F67",
       warningForeground: "#EB8E47",
     },
-    // A higher number means "closer to the user": at the top = brighter
-    // A lower number means "further away from the user": at the bottom = darker
+    // A lower depth is "closer to the user" and brighter,
+    // a higher depth is "further away from the user" and darker
     surface: {
       depth0: "#4B4B4D", // quickInput, dropdown, menu, suggest/hover widgets, notificationCenterHeader, commandCenter
       depth1: "#383838", // titleBar, statusBar, notifications
       depth2: "#292929", // activityBar, sideBar, panel, tabs bar, inactive tabs, editorWidget
-      // depth3 was merged into depth2 and depth4 in 0.5.0
-      depth4: "#1F1F1F", // editor, active tab, breadcrumb, borders between areas
-      depth5: "#141414", // input
-      depth6: "#151515", // peekViewEditor, code blocks
+      depth3: "#1F1F1F", // editor, active tab, breadcrumb, borders between areas
+      depth4: "#151515", // input
+      depth5: "#141414", // peekViewEditor, code blocks
       border: {
         depth0: "#0A0A0A",
         depth1: "#434343",
@@ -82,7 +80,7 @@ const color = {
     mergeConflictIncoming: "#64AEF7",
     modifiedIndicator: "#216479",
     modifiedResource: "#38A7C9",
-    submoduleRescource: "#A6C837",
+    submoduleResource: "#A6C837",
     untrackedResource: "#5B89DB",
   },
   syntax: {
