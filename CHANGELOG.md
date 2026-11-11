@@ -12,6 +12,7 @@ All notable changes to "Valley" will be documented in this file.
 - Better contrast for the status line of the suggest widget
 - The profile badge on the settings icon uses the badge blue instead of VS Code's grey, because VS Code replaced the old status bar profile colors
 - Untracked and deleted files are readable in the explorer and source control view, and ignored files are dimmed instead of standing out
+- Error and warning items in the status bar have readable text; it was nearly the same color as their background
 
 `Changed`
 - Smaller download: the extension package no longer includes screenshots and build sources
