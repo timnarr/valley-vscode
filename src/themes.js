@@ -1,5 +1,5 @@
-import editorColor from './editorColor';
-import syntaxColor from './syntaxColor';
+import editorColor from './editorColor.js';
+import syntaxColor from './syntaxColor.js';
 
 const themes = [
   {

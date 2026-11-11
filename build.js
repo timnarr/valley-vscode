@@ -1,5 +1,5 @@
-const fs = require('fs');
-import themes from './src/themes';
+import fs from 'fs';
+import themes from './src/themes.js';
 
 themes.forEach(item => {
   const jsonObject = JSON.stringify(item.theme, null, 2);

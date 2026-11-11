@@ -2,8 +2,8 @@
  * Test color contrast of some main color combinations
  */
 
-const contrast = require('get-contrast');
-import color from '../src/color';
+import contrast from 'get-contrast';
+import color from '../src/color.js';
 
 const check = (colorA, colorB) => {
   const ratio = contrast.ratio(colorA, colorB)
