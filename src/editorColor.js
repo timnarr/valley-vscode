@@ -70,8 +70,8 @@ const editorColor = {
     "input.placeholderForeground": color.editor.text.default + color.alpha50,
     "inputOption.activeBackground": color.editor.action.primary + color.alpha50,
     "inputOption.hoverBackground": color.editor.text.default + color.alpha40,
-    // "inputOption.activeBorder": "",
-    // "inputOption.activeForeground": "",
+    "inputOption.activeBorder": color.editor.action.primary,
+    "inputOption.activeForeground": color.white,
     "inputValidation.errorBackground": color.editor.action.errorBackground,
     "inputValidation.errorForeground": color.black + color.alpha90,
     "inputValidation.errorBorder": color.editor.action.errorBackground,
@@ -142,6 +142,19 @@ const editorColor = {
     "activityBar.activeBorder": color.editor.text.default,
     "activityBar.activeBackground": color.black + color.alpha00,
     "activityBar.activeFocusBorder": color.editor.action.primary + color.alpha80,
+    "activityBarTop.foreground": color.editor.text.default,
+    "activityBarTop.inactiveForeground": color.editor.text.default + color.alpha50,
+    "activityBarTop.activeBorder": color.editor.text.default,
+    "activityBarTop.dropBorder": color.editor.action.selection,
+    "activityWarningBadge.background": color.editor.action.warningBackground,
+    "activityWarningBadge.foreground": color.black + color.alpha90,
+    "activityErrorBadge.background": color.editor.action.errorBackground,
+    "activityErrorBadge.foreground": color.black + color.alpha90,
+
+    // Profiles
+    // https://code.visualstudio.com/api/references/theme-color#profiles
+    "profileBadge.background": color.editor.action.primary,
+    "profileBadge.foreground": color.black + color.alpha90,
 
     // Sidebar
     // https://code.visualstudio.com/api/references/theme-color#side-bar
@@ -298,6 +311,7 @@ const editorColor = {
     "editorBracketPairGuide.background6": color.white + color.alpha05,
     // ## Folding
     "editor.foldBackground": color.editor.text.default + color.alpha02,
+    "editor.foldPlaceholderForeground": color.editor.text.muted,
     // ## Overview ruler
     // "editorOverviewRuler.background": "",
     "editorOverviewRuler.border": color.white + color.alpha00,
@@ -353,6 +367,19 @@ const editorColor = {
     "diffEditorGutter.removedLineBackground": color.git.diffRemoved + color.alpha05,
     "diffEditorOverview.insertedForeground": color.git.diffInserted + color.alpha60,
     "diffEditorOverview.removedForeground": color.git.diffRemoved + color.alpha60,
+    "diffEditor.unchangedCodeBackground": color.white + color.alpha08,
+    "diffEditor.move.border": color.editor.text.muted + color.alpha60,
+    "diffEditor.moveActive.border": color.editor.action.primary,
+    "multiDiffEditor.headerBackground": color.editor.surface.depth2,
+
+    // # Chat
+    // https://code.visualstudio.com/api/references/theme-color#chat-colors
+    "chat.slashCommandBackground": color.editor.action.primary + color.alpha20,
+    "chat.slashCommandForeground": color.editor.action.primaryHover,
+    "chat.requestCodeBorder": color.editor.action.primary + color.alpha40,
+    "chat.editedFileForeground": color.git.modifiedResource,
+    "chat.linesAddedForeground": color.git.addedResource,
+    "chat.linesRemovedForeground": color.syntax.pinkish,
 
     // # Editor widget colors
     // https://code.visualstudio.com/api/references/theme-color#editor-widget-colors
@@ -430,6 +457,9 @@ const editorColor = {
     "mergeEditor.conflict.handledFocused.border": color.git.mergeConflictCurrent,
     "mergeEditor.conflict.handled.minimapOverViewRuler": color.git.mergeConflictCurrent,
     "mergeEditor.conflict.unhandled.minimapOverViewRuler": color.git.mergeConflictCommon,
+    "mergeEditor.changeBase.background": color.git.diffRemoved + color.alpha10,
+    "mergeEditor.changeBase.word.background": color.git.diffRemoved + color.alpha20,
+    "mergeEditor.conflictingLines.background": color.git.mergeConflictCommon + color.alpha30,
 
     // # Panel
     // https://code.visualstudio.com/api/references/theme-color#panel-colors
@@ -470,8 +500,7 @@ const editorColor = {
     "statusBarItem.warningForeground": color.editor.action.warningForeground,
     "statusBarItem.compactHoverBackground": color.white + color.alpha20,
     "statusBarItem.focusBorder": color.editor.action.primary + color.alpha80,
-    "statusBarItem.settingsProfilesForeground": color.black + color.alpha90,
-    "statusBarItem.settingsProfilesBackground": color.editor.action.primary,
+    "statusBarItem.offlineBackground": color.editor.action.errorBackground,
     "statusBar.focusBorder": color.editor.action.primary + color.alpha80,
 
     // # Title Bar colors
@@ -530,6 +559,7 @@ const editorColor = {
     "extensionIcon.verifiedForeground": color.editor.action.tertiary,
     "extensionIcon.preReleaseForeground": color.editor.action.secondary,
     "extensionIcon.sponsorForeground": color.editor.action.tertiary,
+    "mcpIcon.starForeground": color.editor.action.extensionStar,
 
     // # Quick picker
     // https://code.visualstudio.com/api/references/theme-color#quick-picker
@@ -556,7 +586,7 @@ const editorColor = {
     // https://code.visualstudio.com/api/references/theme-color#integrated-terminal-colors
     "terminal.background": color.editor.surface.depth4,
     "terminal.border": color.editor.surface.border.depth1,
-    // "terminal.foreground": "",
+    "terminal.foreground": color.editor.text.default,
     "terminal.ansiBlack": color.terminal.ansiBlack.normal,
     "terminal.ansiBlue": color.terminal.ansiBlue.normal,
     "terminal.ansiBrightBlack": color.terminal.ansiBlack.bright,
@@ -587,6 +617,7 @@ const editorColor = {
     "terminalCommandDecoration.errorBackground": color.terminal.ansiRed.normal,
     "terminalOverviewRuler.cursorForeground": color.editor.action.search,
     "terminalOverviewRuler.findMatchForeground": color.editor.action.search + color.alpha25,
+    "terminalStickyScrollHover.background": color.editor.surface.depth4,
 
     // # Debug
     // https://code.visualstudio.com/api/references/theme-color#debug
@@ -600,23 +631,24 @@ const editorColor = {
     // "debugView.exceptionLabelBackground": "",
     "debugView.stateLabelForeground": color.black + color.alpha90,
     "debugView.stateLabelBackground": color.editor.action.debugging,
-    // "debugView.valueChangedHighlight": "",
+    "debugView.valueChangedHighlight": color.editor.action.primary,
     "debugTokenExpression.name": color.syntax.turquoiseBlue,
     "debugTokenExpression.value": color.syntax.wisteria,
     "debugTokenExpression.string": color.syntax.pinkishTan,
     "debugTokenExpression.boolean": color.syntax.lavenderPink,
     "debugTokenExpression.number": color.syntax.darkSkyBlue,
+    "debugTokenExpression.type": color.syntax.sand,
     "debugTokenExpression.error": color.editor.action.errorForeground,
 
     // # Testing
     // https://code.visualstudio.com/api/references/theme-color#testing-colors
     // "testing.iconFailed": "",
     // "testing.iconErrored": "",
-    // "testing.iconPassed": "",
-    // "testing.runAction": "",
+    "testing.iconPassed": color.editor.action.tertiary,
+    "testing.runAction": color.editor.action.tertiary,
     // "testing.iconQueued": "",
-    // "testing.iconUnset": "",
-    // "testing.iconSkipped": "",
+    "testing.iconUnset": color.editor.text.muted,
+    "testing.iconSkipped": color.editor.text.muted,
     // "testing.peekBorder": "",
     // "testing.peekHeaderBackground": "",
     // "testing.message.error.decorationForeground": "",
@@ -631,8 +663,8 @@ const editorColor = {
     "welcomePage.progress.foreground": color.editor.action.primary,
     "welcomePage.tileBackground": color.editor.surface.depth2,
     "welcomePage.tileHoverBackground": color.editor.surface.depth1,
-    "welcomePage.tileShadow": color.black + color.alpha00,
     "walkThrough.embeddedEditorBackground": color.editor.surface.depth6,
+    "walkthrough.stepTitle.foreground": color.white,
 
     // # Source Control
     // https://code.visualstudio.com/api/references/theme-color#source-control-colors
@@ -650,6 +682,17 @@ const editorColor = {
     "gitDecoration.ignoredResourceForeground": color.git.ignoredResource,
     "gitDecoration.conflictingResourceForeground": color.git.conflictingResource,
     "gitDecoration.submoduleResourceForeground": color.git.submoduleRescource,
+
+    // # Source Control Graph
+    // https://code.visualstudio.com/api/references/theme-color#source-control-graph-colors
+    "scmGraph.foreground1": color.syntax.sand,
+    "scmGraph.foreground2": color.syntax.lavenderPink,
+    "scmGraph.foreground3": color.syntax.tea,
+    "scmGraph.foreground4": color.syntax.turquoiseBlue,
+    "scmGraph.foreground5": color.syntax.wisteria,
+    "scmGraph.historyItemBaseRefColor": color.syntax.pinkishTan,
+    "scmGraph.historyItemHoverAdditionsForeground": color.terminal.ansiGreen.bright,
+    "scmGraph.historyItemHoverDeletionsForeground": color.terminal.ansiRed.bright,
 
     // # Settings Editor colors
     // https://code.visualstudio.com/api/references/theme-color#settings-editor-colors
@@ -782,6 +825,13 @@ const editorColor = {
     "charts.orange": color.syntax.pinkishTan,
     "charts.green": color.syntax.tea,
     "charts.purple": color.syntax.wisteria,
+    "chart.line": color.editor.action.primary,
+    "chart.axis": color.editor.text.default + color.alpha40,
+    "chart.guide": color.editor.text.default + color.alpha20,
+
+    // # Simple Find Widget
+    // https://code.visualstudio.com/api/references/theme-color#simple-find-widget-colors
+    "simpleFindWidget.sashBorder": color.editor.surface.border.depth3,
 
     // # Ports
     // https://code.visualstudio.com/api/references/theme-color#ports-colors
