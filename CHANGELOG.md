@@ -11,6 +11,7 @@ All notable changes to "Valley" will be documented in this file.
 - Inlay hints use the muted text color again, so they no longer look like comments and are easier to read
 - Better contrast for the status line of the suggest widget
 - The profile badge on the settings icon uses the badge blue instead of VS Code's grey, because VS Code replaced the old status bar profile colors
+- Untracked and deleted files are readable in the explorer and source control view, and ignored files are dimmed instead of standing out
 
 `Changed`
 - Smaller download: the extension package no longer includes screenshots and build sources

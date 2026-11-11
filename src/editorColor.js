@@ -379,7 +379,7 @@ const editorColor = {
     "chat.requestCodeBorder": color.editor.action.primary + color.alpha40,
     "chat.editedFileForeground": color.git.modifiedResource,
     "chat.linesAddedForeground": color.git.addedResource,
-    "chat.linesRemovedForeground": color.syntax.pinkish,
+    "chat.linesRemovedForeground": color.git.deletedResource,
 
     // # Editor widget colors
     // https://code.visualstudio.com/api/references/theme-color#editor-widget-colors
