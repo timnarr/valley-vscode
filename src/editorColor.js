@@ -264,7 +264,7 @@ const editorColor = {
     "editorIndentGuide.activeBackground": color.white + color.alpha15,
     // ## Inline Hints
     "editorInlayHint.background": color.editor.surface.depth0 + color.alpha40,
-    "editorInlayHint.foreground": color.syntax.metallicBlue,
+    "editorInlayHint.foreground": color.editor.text.muted,
     // ## Rulers
     "editorRuler.foreground": color.white + color.alpha05,
     "editor.linkedEditingBackground": color.editor.action.selection + color.alpha25,
@@ -367,7 +367,7 @@ const editorColor = {
     "editorSuggestWidget.focusHighlightForeground": color.editor.action.searchHighlight,
     "editorSuggestWidget.highlightForeground": color.editor.action.searchHighlight,
     "editorSuggestWidget.selectedBackground": color.editor.action.selection + color.alpha25,
-    "editorSuggestWidgetStatus.foreground": color.editor.text.muted,
+    "editorSuggestWidgetStatus.foreground": color.editor.text.default + color.alpha70,
     // "editorSuggestWidget.selectedForeground": "",
     // "editorSuggestWidget.selectedIconForeground": "",
     "editorHoverWidget.foreground": color.editor.text.default,
