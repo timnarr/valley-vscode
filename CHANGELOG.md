@@ -3,9 +3,15 @@ All notable changes to "Valley" will be documented in this file.
 
 ***
 
-## Unreleased
+## 0.6.0 - November 11, 2026
+`Changed`
+- Smaller download: the extension package no longer includes screenshots and build sources
+
 `Added`
 - Valley colors for places that still showed VS Code's own colors: source control graph, chat, warning and error badges, the activity bar at the top, test icons, the option toggles in find and search, base changes in the merge editor, moved code in the diff editor, terminal text and a few smaller spots
+
+`Removed`
+- Colors VS Code no longer supports (`statusBarItem.settingsProfiles*`, `welcomePage.tileShadow`)
 
 `Fixed`
 - Inlay hints use the muted text color again, so they no longer look like comments and are easier to read
@@ -13,12 +19,6 @@ All notable changes to "Valley" will be documented in this file.
 - The profile badge on the settings icon uses the badge blue instead of VS Code's grey, because VS Code replaced the old status bar profile colors
 - Untracked and deleted files are readable in the explorer and source control view, and ignored files are dimmed instead of standing out
 - Error and warning items in the status bar have readable text; it was nearly the same color as their background
-
-`Changed`
-- Smaller download: the extension package no longer includes screenshots and build sources
-
-`Removed`
-- Colors VS Code no longer supports (`statusBarItem.settingsProfiles*`, `welcomePage.tileShadow`)
 
 ## 0.5.0 - November 11, 2026
 `Changed`
