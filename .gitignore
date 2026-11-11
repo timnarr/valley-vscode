@@ -100,3 +100,6 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/node,macos,windows,dropbox,visualstudiocode
+
+# Extension packages built by vsce
+*.vsix
