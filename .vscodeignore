@@ -2,3 +2,10 @@
 .vscode-test/**
 .gitignore
 vsc-extension-quickstart.md
+.github/**
+build.js
+demo/**
+screenshots/**
+screenshots.md
+src/**
+test/**

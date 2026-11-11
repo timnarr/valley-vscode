@@ -8,6 +8,9 @@ All notable changes to "Valley" will be documented in this file.
 - Inlay hints use the muted text color again, so they no longer look like comments and are easier to read
 - Better contrast for the status line of the suggest widget
 
+`Changed`
+- Smaller download: the extension package no longer includes screenshots and build sources
+
 ## 0.5.0 - November 11, 2026
 `Changed`
 - New, more neutral grey surfaces: editor `#1F1F1F`, sidebar, panel and tabs `#292929`, title and status bar `#383838`, menus, dropdowns and widgets `#4B4B4D`
