@@ -37,8 +37,9 @@ const color = {
       search: "#E7BB5A",
       searchHighlight: "#E9BF3A",
       extensionStar: "#E9BF3A",
-      secondary: "#D1AEE6",
-      secondaryHover: "#D1AEE6",
+      neutral: "#989898",
+      neutralHover: "#ADADAD",
+      secondary: "#D3AEE6",
       selection: "#006AFF",
       tertiary: "#66D5AC",
       tertiaryHover: "#90DFC2",
@@ -48,18 +49,18 @@ const color = {
     // A higher number means "closer to the user": at the top = brighter
     // A lower number means "further away from the user": at the bottom = darker
     surface: {
-      depth0: "#3C3C3E", // quickInput, titleBar, dropdown, statusBar, sidebarSectionHeader, notificationCenterHeader
-      depth1: "#323233", // activityBar, notifications
-      depth2: "#282829", // sideBar, panel
-      depth3: "#232324", // editorWidget, editorGroupHeader.tabsBackground, breadcrumb
-      depth4: "#1E1E1F", // editor
-      depth5: "#161618", // input
-      depth6: "#141415", // peekViewEditor
+      depth0: "#4B4B4D", // quickInput, dropdown, menu, suggest/hover widgets, notificationCenterHeader, commandCenter
+      depth1: "#383838", // titleBar, statusBar, notifications
+      depth2: "#292929", // activityBar, sideBar, panel, tabs bar, inactive tabs, editorWidget
+      // depth3 was merged into depth2 and depth4 in 0.5.0
+      depth4: "#1F1F1F", // editor, active tab, breadcrumb, borders between areas
+      depth5: "#141414", // input
+      depth6: "#151515", // peekViewEditor, code blocks
       border: {
-        depth0: "#0A0A0B",
-        depth1: "#414143",
-        depth2: "#4C4C4D",
-        depth3: "#555558",
+        depth0: "#0A0A0A",
+        depth1: "#434343",
+        depth2: "#4D4D4D",
+        depth3: "#585858",
       },
     },
     text: {
