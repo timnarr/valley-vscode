@@ -6,7 +6,7 @@
   "license": "CC-BY-NC-4.0",
   "type": "module",
   "publisher": "TimGrochowski",
-  "author": "Tim Grochowski <dev@tim-grochowski.de>",
+  "author": "Tim Narr <dev@tim-grochowski.de>",
   "repository": {
     "type": "git",
     "url": "https://github.com/timnarr/valley-vscode"

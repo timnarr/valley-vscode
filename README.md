@@ -7,7 +7,7 @@
   ![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/TimGrochowski.valley-vscode?color=%235b89db&label=installs&logo=Visual%20Studio%20Code&style=for-the-badge)
   [![Preview in vscode.dev](https://img.shields.io/badge/preview%20in-vscode.dev-blue?color=%239285cc&logo=Visual%20Studio%20Code&style=for-the-badge)](https://vscode.dev/theme/timgrochowski.valley-vscode)
 
-  ![Valley screenshot](https://github.com/TimGr/valley-vscode/blob/master/screenshots/valley-vscode-title.png?raw=true)
+  ![Valley screenshot](https://github.com/timnarr/valley-vscode/blob/master/screenshots/valley-vscode-title.png?raw=true)
 
 </div>
 
@@ -19,7 +19,7 @@
 ## 📦 How to Install
 - Open the **"Extensions"** sidebar in Visual Studio Code
 - Search for `Valley`
-- Choose "Valley" by Tim Grochowski and click **"Install"**
+- Choose "Valley" by Tim Narr and click **"Install"**
 - [Select the Theme](https://code.visualstudio.com/docs/getstarted/themes#_selecting-the-color-theme)
 
 **or via "Quick Open, Go to File..."**
@@ -31,27 +31,27 @@
 **and if you like Valley rate it or write a review in the [marketplace](https://marketplace.visualstudio.com/items?itemName=TimGrochowski.valley-vscode&ssr=false#review-details)** ✨
 
 ## 🌄 Screenshots
-You can find more screenshots [here](https://github.com/TimGr/valley-vscode/blob/master/screenshots.md). **Or even better: Use the Theme Tester Playground [here](https://vscode.dev/theme/timgrochowski.valley-vscode).**
+You can find more screenshots [here](https://github.com/timnarr/valley-vscode/blob/master/screenshots.md). **Or even better: Use the Theme Tester Playground [here](https://vscode.dev/theme/timgrochowski.valley-vscode).**
 
 **Vivid and pleasant syntax color palette for long coding sessions.**
 
-![Valley syntax JavaScript](https://github.com/TimGr/valley-vscode/blob/master/screenshots/valley-vscode-syntax-javascript.png?raw=true)
+![Valley syntax JavaScript](https://github.com/timnarr/valley-vscode/blob/master/screenshots/valley-vscode-syntax-javascript.png?raw=true)
 
-![Valley syntax CSS](https://github.com/TimGr/valley-vscode/blob/master/screenshots/valley-vscode-syntax-css.png?raw=true)
+![Valley syntax CSS](https://github.com/timnarr/valley-vscode/blob/master/screenshots/valley-vscode-syntax-css.png?raw=true)
 
-![Valley syntax HTML](https://github.com/TimGr/valley-vscode/blob/master/screenshots/valley-vscode-syntax-html.png?raw=true)
+![Valley syntax HTML](https://github.com/timnarr/valley-vscode/blob/master/screenshots/valley-vscode-syntax-html.png?raw=true)
 
 **To improve orientation, I have colored the surfaces according to their z-axis. The closer a surface is to the user, the brighter it is.**
 
-![Valley surfaces and command palette](https://github.com/TimGr/valley-vscode/blob/master/screenshots/valley-vscode-editor-surfaces-commands.png?raw=true)
+![Valley surfaces and command palette](https://github.com/timnarr/valley-vscode/blob/master/screenshots/valley-vscode-editor-surfaces-commands.png?raw=true)
 
 **I have tried to be AA compliant and achieve a contrast ratio of 4.5 for all main color combinations.**
 
-![Valley terminal](https://github.com/TimGr/valley-vscode/blob/master/screenshots/valley-vscode-terminal-full.png?raw=true)
+![Valley terminal](https://github.com/timnarr/valley-vscode/blob/master/screenshots/valley-vscode-terminal-full.png?raw=true)
 
 **Features like search or Git have their own color palette and are consistent in their use. For example, all search-related colors are consistently yellow.**
 
-![Valley search editor](https://github.com/TimGr/valley-vscode/blob/master/screenshots/valley-vscode-editor-search.png?raw=true)
+![Valley search editor](https://github.com/timnarr/valley-vscode/blob/master/screenshots/valley-vscode-editor-search.png?raw=true)
 
 ## 🎨 Color Palette
 You can explore Valley's color palette on [calcolor.co](https://calcolor.co/palette/915560412).
@@ -89,10 +89,10 @@ I can highly recommend the following settings to improve readability and appeara
 ```
 
 ## 💬 Feedback and Issues
-If you have any suggestions, feedback or if you found a bug, please [file an issue](https://github.com/TimGr/valley-vscode/issues) and let me know. I am very happy about every feedback. Screenshots are very welcome.
+If you have any suggestions, feedback or if you found a bug, please [file an issue](https://github.com/timnarr/valley-vscode/issues) and let me know. I am very happy about every feedback. Screenshots are very welcome.
 
 ## 👪 Valley Adoptions
-- [Valley for iTerm2](https://github.com/TimGr/valley-iterm)
+- [Valley for iTerm2](https://github.com/timnarr/valley-iterm)
 - [Valley for Windows Terminal, by Carl Hartshorn](https://github.com/carl-hartshorn/valley-windowsterminal)
 ## 🔧 Tools
 I have used a lot of great tools that have helped me to create this theme:
@@ -106,7 +106,7 @@ I have used a lot of great tools that have helped me to create this theme:
 - [calcolor.co](https://calcolor.co)
 
 ## ©️ License
-**Valley Theme** by **Tim Grochowski** is licensed under the ["Creative Commons Attribution-NonCommercial 4.0 International"](https://creativecommons.org/licenses/by-nc/4.0/) License.
+**Valley Theme** by **Tim Narr** is licensed under the ["Creative Commons Attribution-NonCommercial 4.0 International"](https://creativecommons.org/licenses/by-nc/4.0/) License.
 
 ***
 
