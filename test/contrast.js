@@ -5,14 +5,18 @@
 import contrast from 'get-contrast';
 import color from '../src/color.js';
 
+// WCAG AA ratio for normal text, and the lowest ratio this test accepts
+const AA_RATIO = 4.5;
+const MIN_RATIO = 3;
+
 const check = (colorA, colorB) => {
   const ratio = contrast.ratio(colorA, colorB)
   const wcagScore = contrast.score(colorA, colorB)
   let visualScore;
 
-  if (ratio >= 4.5) {
+  if (ratio >= AA_RATIO) {
     visualScore = '✅ passed'
-  } else if (ratio >= 3) {
+  } else if (ratio >= MIN_RATIO) {
     visualScore = '🚨 acceptable'
   } else {
     visualScore = '💩 failed'
@@ -75,3 +79,10 @@ const tests = [{
 ];
 
 console.log(tests)
+
+const failed = tests.filter(test => test.Result['├── ratio'] < MIN_RATIO);
+
+if (failed.length > 0) {
+  console.error(`💩 Below ${MIN_RATIO}:1: ${failed.map(test => test.Name).join(', ')}`);
+  process.exitCode = 1;
+}
