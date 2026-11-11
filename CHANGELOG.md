@@ -24,6 +24,7 @@ All notable changes to "Valley" will be documented in this file.
 - The active tab now blends into the editor and the inactive tabs use the sidebar color; the blue top border on the active tab is gone
 - The activity bar uses the sidebar color and gets a thin border
 - Secondary buttons are grey instead of purple
+- Install buttons in the Extensions view use the regular button blue instead of green
 - Bracket pair colorization uses the regular syntax colors instead of the brighter terminal variants
 - More subtle inlay hints, folded ranges and current line highlight
 - The active terminal tab is marked in blue
@@ -32,7 +33,7 @@ All notable changes to "Valley" will be documented in this file.
 - Colors for features VS Code added since 0.4.0: bracket pair guides, merge editor, command center, sticky scroll, unicode highlighting, diff editor line backgrounds, terminal find matches and command decorations, keybinding table, settings profiles and extension icons (verified, pre-release, sponsor)
 
 `Removed`
-- Colors VS Code no longer supports (`extensionButton.prominent*`, `welcomePage.button*`)
+- Colors VS Code no longer supports (`welcomePage.button*`)
 
 ## 0.4.0 - September 30, 2021
 `Changed`
