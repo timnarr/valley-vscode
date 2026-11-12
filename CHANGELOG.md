@@ -8,6 +8,8 @@ All notable changes to "Valley" will be documented in this file.
 - The markers for added, modified and deleted lines in the gutter, overview ruler and minimap share one brightness and stand out clearly from the editor: green `#22876B`, blue `#4E75AF` (the hue of modified files in the explorer) and red `#AE5364`
 - Inserted and removed text in the diff editor are equally strong: green `#1DC799` instead of the glaring `#1FF9BF`, red `#F34E6A` instead of `#F91F59`
 - Files in the explorer and source control view: conflicting files are a lighter pink (`#DA69BB`), untracked files a slightly lighter green (`#27AB7C`), deleted files a lighter red (`#DD7288`) and submodules a calmer green (`#9CB84B`)
+- The three darker syntax colors are as bright as the others, for keywords, operators and numbers that read as clearly as the rest: blue `#6694E5` instead of `#5B89DB`, violet `#9A8CD4` instead of `#9285CC` and red `#DD7288` instead of `#D66A81`. The terminal's blue and red and the bracket pair colors follow.
+- Comments are a little easier to read (`#617D9A` instead of `#55708B`) and still stay in the background
 
 `Fixed`
 - Added lines in the gutter, overview ruler and minimap are green instead of the blue of modified lines

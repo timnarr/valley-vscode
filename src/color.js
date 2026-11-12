@@ -86,15 +86,15 @@ const color = {
   syntax: {
     tea: '#78B98A',
     turquoiseBlue: '#57B6CD',
-    darkSkyBlue: '#5B89DB',
-    wisteria: '#9285CC',
+    darkSkyBlue: '#6694E5',
+    wisteria: '#9A8CD4',
     lavenderPink: '#DF91CA',
-    pinkish: '#D66A81',
+    pinkish: '#DD7288',
     pinkishTan: '#CD926D',
     sand: '#D8C67E',
     silver: '#BFC7CF', // Foreground/Text
     tintedGray: '#8B949C', // Punctuation
-    metallicBlue: '#55708B', // Comment
+    metallicBlue: '#617D9A', // Comment
   },
   terminal: {
     ansiBlack: {
@@ -102,7 +102,7 @@ const color = {
       bright: '#656567'
     },
     ansiBlue: {
-      normal: '#5B89DB',
+      normal: '#6694E5',
       bright: '#91B7F8'
     },
     ansiCyan: {
@@ -118,7 +118,7 @@ const color = {
       bright: '#FACCEE'
     },
     ansiRed: {
-      normal: '#D66A81',
+      normal: '#DD7288',
       bright: '#F59EB1'
     },
     ansiWhite: {
