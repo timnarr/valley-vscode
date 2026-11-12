@@ -7,6 +7,9 @@ All notable changes to "Valley" will be documented in this file.
 `Changed`
 - Modified files in the explorer and source control view are blue (`#5A8BF9`), untracked files green (`#04A374`)
 
+`Added`
+- Colors for VS Code's new Modern UI (`workbench.experimental.modernUI`): the space between the floating panels and their outline stay in the grey of the title and status bar
+
 `Fixed`
 - Better contrast for the names of inactive tabs
 

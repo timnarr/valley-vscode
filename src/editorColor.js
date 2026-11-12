@@ -223,6 +223,15 @@ const editorColor = {
     "sideBySideEditor.horizontalBorder": color.editor.surface.border.depth0,
     "sideBySideEditor.verticalBorder": color.editor.surface.border.depth0,
 
+    // Modern UI (experimental)
+    // https://github.com/microsoft/vscode/blob/main/src/vs/workbench/contrib/modernUI/README.md
+    // The shell between the floating panels continues the title and status bar.
+    // The panel outline uses the same color, so the panels stand out by their
+    // brightness alone and compact density gets a subtle line between them
+    "modernUI.shellBackground": color.editor.surface.depth1,
+    "modernUI.inactiveShellBackground": color.editor.surface.depth1,
+    "surface.border": color.editor.surface.depth1,
+
     // Editor colors
     // https://code.visualstudio.com/api/references/theme-color#editor-colors
     // ## Basic Editor colors
