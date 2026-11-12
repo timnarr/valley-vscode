@@ -3,8 +3,9 @@
   # Valley Theme for Visual Studio Code
   [Valley](https://marketplace.visualstudio.com/items?itemName=TimGrochowski.valley-vscode) is a simple theme for Visual Studio Code without visual noise. Created with handpicked and vivid colors, appropriate contrast and a lot of love to help you focus on your code.
 
-  ![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/TimGrochowski.valley-vscode?color=%2357b6cd&label=Theme%20Version&logo=Visual%20Studio%20Code&style=for-the-badge)
-  ![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/TimGrochowski.valley-vscode?color=%235b89db&label=installs&logo=Visual%20Studio%20Code&style=for-the-badge)
+  [![Visual Studio Marketplace Version (short)](https://vsmarketplacebadges.dev/version-short/TimGrochowski.valley-vscode.svg)](https://marketplace.visualstudio.com/items?itemName=TimGrochowski.valley-vscode)
+  [![Visual Studio Marketplace Installs (short)](https://vsmarketplacebadges.dev/installs-short/TimGrochowski.valley-vscode.svg)](https://marketplace.visualstudio.com/items?itemName=TimGrochowski.valley-vscode)
+
   [![Preview in vscode.dev](https://img.shields.io/badge/preview%20in-vscode.dev-blue?color=%239285cc&logo=Visual%20Studio%20Code&style=for-the-badge)](https://vscode.dev/theme/timgrochowski.valley-vscode)
 
   ![Valley screenshot](https://github.com/timnarr/valley-vscode/blob/master/screenshots/valley-vscode-title.png?raw=true)
@@ -13,10 +14,10 @@
 
 ----
 
-## 🚀 My motivation to build Valley
+## My motivation to build Valley
 >I've always had this feeling about themes like: "If I use this theme it makes me a better developer", which is of course totally stupid, but I've always had this feeling and changed my theme many times. But I didn't felt completely comfortable with any of it and was kind of blocked in my work. Because colors were not harmonious, contrasts were missing or much too strong. And all in all, I always lacked orientation because there was a lack of design in some way. And so I have developed my own. Of course this is a **very personal perception**, and this theme won't fit 100% for some people either. But maybe only a few people have as much fun with Valley as I do.
 
-## 📦 How to Install
+## How to Install
 - Open the **"Extensions"** sidebar in Visual Studio Code
 - Search for `Valley`
 - Choose "Valley" by Tim Narr and click **"Install"**
@@ -30,7 +31,7 @@
 
 **and if you like Valley rate it or write a review in the [marketplace](https://marketplace.visualstudio.com/items?itemName=TimGrochowski.valley-vscode&ssr=false#review-details)** ✨
 
-## 🌄 Screenshots
+## Screenshots
 You can find more screenshots [here](https://github.com/timnarr/valley-vscode/blob/master/screenshots.md). **Or even better: Use the Theme Tester Playground [here](https://vscode.dev/theme/timgrochowski.valley-vscode).**
 
 **Vivid and pleasant syntax color palette for long coding sessions.**
@@ -53,13 +54,13 @@ You can find more screenshots [here](https://github.com/timnarr/valley-vscode/bl
 
 ![Valley search editor](https://github.com/timnarr/valley-vscode/blob/master/screenshots/valley-vscode-editor-search.png?raw=true)
 
-## 🎨 Color Palette
+## Color Palette
 You can explore Valley's color palette on [calcolor.co](https://calcolor.co/palette/915560412).
 
-## 👤 Personalization
+## Personalization
 If something does not look the way you want it to, feel free to overwrite it via user settings and give Valley your own personal touch. For more Information see the Visual Studio Code docs for ["Customizing a Color Theme"](https://code.visualstudio.com/docs/getstarted/themes#_customizing-a-color-theme).
 
-## ⚙️ Recommended Settings
+## Recommended Settings
 I can highly recommend the following settings to improve readability and appearance of Visual Studio Code. These are also the settings that can be seen on the screenshots:
 
 ```json
@@ -88,13 +89,13 @@ I can highly recommend the following settings to improve readability and appeara
 "material-icon-theme.folders.theme": "classic",
 ```
 
-## 💬 Feedback and Issues
+## Feedback and Issues
 If you have any suggestions, feedback or if you found a bug, please [file an issue](https://github.com/timnarr/valley-vscode/issues) and let me know. I am very happy about every feedback. Screenshots are very welcome.
 
-## 👪 Valley Adoptions
+## Valley Adoptions
 - [Valley for iTerm2](https://github.com/timnarr/valley-iterm)
 - [Valley for Windows Terminal, by Carl Hartshorn](https://github.com/carl-hartshorn/valley-windowsterminal)
-## 🔧 Tools
+## Tools
 I have used a lot of great tools that have helped me to create this theme:
 - [whocanuse.com](https://whocanuse.com/)
 - [accessible-colors.com](https://accessible-colors.com/)
@@ -105,7 +106,7 @@ I have used a lot of great tools that have helped me to create this theme:
 - [contrast-checker.glitch.me](https://contrast-checker.glitch.me)
 - [calcolor.co](https://calcolor.co)
 
-## ©️ License
+## License
 **Valley Theme** by **Tim Narr** is licensed under the ["Creative Commons Attribution-NonCommercial 4.0 International"](https://creativecommons.org/licenses/by-nc/4.0/) License.
 
 ***
@@ -114,6 +115,6 @@ The syntax color palette was partly inspired by the Google Chrome DevTools Theme
 
 ***
 
-Valley is available for free in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=TimGrochowski.valley-vscode). If you enjoy using it and want to say thank you then you can [buy me a coffee](https://www.buymeacoffee.com/TimGr) and/or rate it/write a review in the [marketplace](https://marketplace.visualstudio.com/items?itemName=TimGrochowski.valley-vscode&ssr=false#review-details) ✨.
+Valley is available for free in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=TimGrochowski.valley-vscode). If you enjoy using it and want to say thank you then you can [buy me a coffee](https://buymeacoffee.com/tim.n) and/or rate it/write a review in the [marketplace](https://marketplace.visualstudio.com/items?itemName=TimGrochowski.valley-vscode&ssr=false#review-details) ✨.
 
 **Enjoy** ❤️
