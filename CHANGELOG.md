@@ -3,6 +3,10 @@ All notable changes to "Valley" will be documented in this file.
 
 ***
 
+## Unreleased
+`Changed`
+- The borders between the activity bar, sidebar, editor groups and panel use the grey of the title and status bar instead of near black, as in VS Code's Modern UI
+
 ## 0.7.0 - November 12, 2026
 `Changed`
 - Modified files in the explorer and source control view are blue (`#5A8BF9`), untracked files green (`#04A374`)

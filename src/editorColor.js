@@ -136,7 +136,7 @@ const editorColor = {
     "activityBar.dropBorder": color.editor.action.selection,
     "activityBar.foreground": color.editor.text.default,
     "activityBar.inactiveForeground": color.editor.text.default + color.alpha50,
-    "activityBar.border": color.editor.surface.depth3,
+    "activityBar.border": color.editor.surface.depth1,
     "activityBarBadge.background": color.editor.action.primary,
     "activityBarBadge.foreground": color.black + color.alpha90,
     "activityBar.activeBorder": color.editor.text.default,
@@ -160,7 +160,7 @@ const editorColor = {
     // https://code.visualstudio.com/api/references/theme-color#side-bar
     "sideBar.background": color.editor.surface.depth2,
     "sideBar.foreground": color.editor.text.default + color.alpha75,
-    "sideBar.border": color.editor.surface.depth3,
+    "sideBar.border": color.editor.surface.depth1,
     "sideBar.dropBackground": color.editor.action.selection + color.alpha40,
     "sideBarTitle.foreground": color.editor.text.default,
     "sideBarSectionHeader.background": color.editor.surface.depth2,
@@ -185,7 +185,7 @@ const editorColor = {
 
     // Editor Group & Tabs
     // https://code.visualstudio.com/api/references/theme-color#editor-groups-tabs
-    "editorGroup.border": color.editor.surface.border.depth0,
+    "editorGroup.border": color.editor.surface.depth1,
     "editorGroup.dropBackground": color.editor.action.selection + color.alpha40,
     "editorGroupHeader.noTabsBackground": color.editor.surface.depth2,
     "editorGroupHeader.tabsBackground": color.editor.surface.depth2,
@@ -473,7 +473,7 @@ const editorColor = {
     // # Panel
     // https://code.visualstudio.com/api/references/theme-color#panel-colors
     "panel.background": color.editor.surface.depth2,
-    "panel.border": color.editor.surface.depth3,
+    "panel.border": color.editor.surface.depth1,
     "panel.dropBorder": color.editor.action.selection,
     "panelTitle.activeBorder": color.editor.text.default,
     "panelTitle.activeForeground":color.editor.text.default,

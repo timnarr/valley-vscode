@@ -50,9 +50,9 @@ const color = {
     // a higher depth is "further away from the user" and darker
     surface: {
       depth0: "#4B4B4D", // quickInput, dropdown, menu, suggest/hover widgets, notificationCenterHeader, commandCenter
-      depth1: "#383838", // titleBar, statusBar, notifications
+      depth1: "#383838", // titleBar, statusBar, notifications, borders between areas
       depth2: "#292929", // activityBar, sideBar, panel, tabs bar, inactive tabs, editorWidget
-      depth3: "#1F1F1F", // editor, active tab, breadcrumb, borders between areas
+      depth3: "#1F1F1F", // editor, active tab, breadcrumb, borders between tabs
       depth4: "#151515", // input
       depth5: "#141414", // peekViewEditor, code blocks
       border: {
