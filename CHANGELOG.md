@@ -3,7 +3,7 @@ All notable changes to "Valley" will be documented in this file.
 
 ***
 
-## Unreleased
+## 0.8.0 - November 12, 2026
 `Changed`
 - The markers for added, modified and deleted lines in the gutter, overview ruler and minimap share one brightness and stand out clearly from the editor: green `#22876B`, blue `#4E75AF` (the hue of modified files in the explorer) and red `#AE5364`
 - Inserted and removed text in the diff editor are equally strong: green `#1DC799` instead of the glaring `#1FF9BF`, red `#F34E6A` instead of `#F91F59`
