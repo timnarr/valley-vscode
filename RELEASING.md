@@ -1,6 +1,6 @@
 # Releasing Valley
 
-Valley is published to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=TimGrochowski.valley-vscode) under the publisher ID `TimGrochowski` (display name: Tim Narr).
+Valley is published to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=TimGrochowski.valley-vscode) under the publisher ID `TimGrochowski` (display name: Tim Narr). Pushing a version tag publishes it through a GitHub workflow; that needs a one-time [setup](#set-up-trusted-publishing).
 
 The commands use `@vscode/vsce@4.1.0`, the version this process was tested with. Replace `X.Y.Z` with the new version.
 
@@ -53,13 +53,64 @@ git tag -a vX.Y.Z -m "Valley X.Y.Z"
 
 `npm version` updates `package.json` and `package-lock.json`. `--no-git-tag-version` stops it from creating its own commit and tag, so the release commit and the annotated tag match the earlier ones.
 
-## 5. Package
+## 5. Push
+
+```bash
+git push origin master vX.Y.Z
+```
+
+The tag starts the workflow [Publish](.github/workflows/publish.yml). It checks that the tag matches the version in `package.json`, builds the themes, runs the tests and publishes to the Marketplace with Trusted Publishing, without a token. Follow it in the **Actions** tab on GitHub or with:
+
+```bash
+gh run watch
+```
+
+## 6. Check the Marketplace
+
+The Marketplace checks the package. After a few minutes the new version is live:
+
+```bash
+npx @vscode/vsce@4.1.0 show TimGrochowski.valley-vscode
+```
+
+Optionally, attach the package to a GitHub release (build it first as in [Upload by hand](#upload-by-hand)):
+
+```bash
+gh release create vX.Y.Z valley-vscode-X.Y.Z.vsix --title "Valley X.Y.Z" --notes "See CHANGELOG.md"
+```
+
+## If the workflow fails
+
+Nothing reached the Marketplace, so the version is still free. Fix the cause, then move the tag to the fixed commit and push both again:
+
+```bash
+git tag -d vX.Y.Z
+git push origin :refs/tags/vX.Y.Z
+git tag -a vX.Y.Z -m "Valley X.Y.Z"
+git push origin master vX.Y.Z
+```
+
+## Set up Trusted Publishing
+
+Needed once, before the first release through the workflow. On the [publisher management page](https://marketplace.visualstudio.com/manage), open the publisher, select **Trusted Publishing** and create a policy:
+
+- **Policy name:** `Release workflow`
+- **Repository owner:** `timnarr`
+- **Repository:** `valley-vscode`
+- **Workflow:** `publish.yml`
+- **Environment:** leave empty
+
+See [Publishing Extensions](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#publish-with-github-actions-and-trusted-publishing) in the VS Code docs for details.
+
+## Upload by hand
+
+Without the workflow, build the package and upload it in the browser. Do this before pushing the tag, or the workflow tries to publish the same version and fails.
 
 ```bash
 npx @vscode/vsce@4.1.0 package
 ```
 
-This creates `valley-vscode-X.Y.Z.vsix` in the repository root (ignored by git). vsce lists the included files. Expect exactly these 7 files, about 35 KB:
+This creates `valley-vscode-X.Y.Z.vsix` in the repository root (ignored by git). vsce lists the included files. Expect exactly these 7 files, about 30 KB:
 
 - `package.json`
 - `readme.md`
@@ -71,33 +122,11 @@ This creates `valley-vscode-X.Y.Z.vsix` in the repository root (ignored by git).
 
 Anything else means `.vscodeignore` needs an update.
 
-## 6. Upload to the Marketplace
-
 1. Open the [publisher management page](https://marketplace.visualstudio.com/manage/publishers/TimGrochowski) and sign in with the Microsoft account that owns the publisher.
 2. Next to **Valley**, open the **⋯** menu and select **Update**.
 3. Upload `valley-vscode-X.Y.Z.vsix`.
 
-The Marketplace checks the package. After a few minutes the new version is live:
-
-```bash
-npx @vscode/vsce@4.1.0 show TimGrochowski.valley-vscode
-```
-
-The upload needs no token. Azure DevOps retires global Personal Access Tokens on December 1, 2026. From then on, `vsce login` and `vsce publish` with a token no longer work. For publishing without the browser, see [Automate with GitHub Actions](#automate-with-github-actions).
-
-## 7. Push
-
-Push only after the Marketplace has accepted the package. If the upload fails, you can still fix the release commit and the tag locally.
-
-```bash
-git push origin master vX.Y.Z
-```
-
-Optionally, attach the package to a GitHub release:
-
-```bash
-gh release create vX.Y.Z valley-vscode-X.Y.Z.vsix --title "Valley X.Y.Z" --notes "See CHANGELOG.md"
-```
+The upload needs no token. Azure DevOps retires global Personal Access Tokens on December 1, 2026; from then on, `vsce login` and `vsce publish` with a token no longer work.
 
 ## Optional: Open VSX
 
@@ -111,55 +140,13 @@ Valley is not on [Open VSX](https://open-vsx.org) yet. VSCodium, Cursor, Windsur
    npx ovsx create-namespace TimGrochowski -p <token>
    ```
 
-4. For each release, after step 5:
+4. For each release, build the package as in [Upload by hand](#upload-by-hand), then:
 
    ```bash
    npx ovsx publish valley-vscode-X.Y.Z.vsix -p <token>
    ```
 
 See [Publishing Extensions](https://github.com/eclipse/openvsx/wiki/Publishing-Extensions) in the Open VSX wiki for details.
-
-## Automate with GitHub Actions
-
-With Marketplace Trusted Publishing, a GitHub workflow publishes without a stored token. Releasing then means pushing a tag, and steps 5 and 6 go away.
-
-1. On the [publisher management page](https://marketplace.visualstudio.com/manage), open the publisher, select **Trusted Publishing** and create a policy:
-   - **Policy name:** `Release workflow`
-   - **Repository owner:** `timnarr`
-   - **Repository:** `valley-vscode`
-   - **Workflow:** `publish.yml`
-   - **Environment:** leave empty
-2. Add `.github/workflows/publish.yml`:
-
-   ```yaml
-   name: Publish
-
-   on:
-     push:
-       tags:
-         - 'v*'
-
-   jobs:
-     publish:
-       runs-on: ubuntu-latest
-       permissions:
-         contents: read
-         id-token: write
-       steps:
-         - uses: actions/checkout@v7
-         - uses: actions/setup-node@v7
-           with:
-             node-version: lts/*
-         - run: npm ci
-         - run: npm run build
-         - run: git diff --exit-code themes/
-         - run: npm test
-         - run: npx @vscode/vsce@4.1.0 publish --oidc
-   ```
-
-3. From then on, a release is steps 1 to 4, then `git push origin master vX.Y.Z`.
-
-See [Publishing Extensions](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#publish-with-github-actions-and-trusted-publishing) in the VS Code docs for details.
 
 ## Renew the screenshots
 
