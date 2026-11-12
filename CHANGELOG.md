@@ -3,7 +3,7 @@ All notable changes to "Valley" will be documented in this file.
 
 ***
 
-## Unreleased
+## 0.7.2 - November 12, 2026
 `Changed`
 - New icon: the folded blue V, redrawn with even arms and a cleaner fold on a rounded tile
 
