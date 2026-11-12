@@ -16,11 +16,6 @@ const twigSyntax = [
       "foreground": color.syntax.pinkish
     }
   },
-  {
-    "settings": {
-      "foreground": color.syntax.wisteria
-    }
-  },
 ];
 
 export default twigSyntax;

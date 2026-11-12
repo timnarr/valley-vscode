@@ -42,7 +42,6 @@ const color = {
       secondary: "#D3AEE6",
       selection: "#006AFF",
       tertiary: "#66D5AC",
-      tertiaryHover: "#90DFC2",
       warningBackground: "#C58F67",
       warningForeground: "#EB8E47",
     },

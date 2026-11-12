@@ -3,6 +3,10 @@ All notable changes to "Valley" will be documented in this file.
 
 ***
 
+## Unreleased
+`Fixed`
+- Added lines in the gutter, overview ruler and minimap are green (`#217962`) instead of the blue of modified lines
+
 ## 0.7.2 - November 12, 2026
 `Changed`
 - New icon: the folded blue V, redrawn with even arms and a cleaner fold on a rounded tile

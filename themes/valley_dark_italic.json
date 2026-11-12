@@ -121,7 +121,7 @@
     "minimapSlider.background": "#E5E7E81a",
     "minimapSlider.hoverBackground": "#E5E7E833",
     "minimapSlider.activeBackground": "#E5E7E84D",
-    "minimapGutter.addedBackground": "#216479",
+    "minimapGutter.addedBackground": "#217962",
     "minimapGutter.modifiedBackground": "#216479",
     "minimapGutter.deletedBackground": "#792138",
     "editorGroup.border": "#383838",
@@ -219,7 +219,7 @@
     "editorOverviewRuler.wordHighlightForeground": "#E5E7E833",
     "editorOverviewRuler.wordHighlightStrongForeground": "#E5E7E84D",
     "editorOverviewRuler.modifiedForeground": "#216479",
-    "editorOverviewRuler.addedForeground": "#216479",
+    "editorOverviewRuler.addedForeground": "#217962",
     "editorOverviewRuler.deletedForeground": "#792138",
     "editorOverviewRuler.errorForeground": "#EB4755",
     "editorOverviewRuler.warningForeground": "#EB8E47",
@@ -237,7 +237,7 @@
     "editorUnnecessaryCode.opacity": "#00000080",
     "editorGutter.background": "#1F1F1F",
     "editorGutter.modifiedBackground": "#216479",
-    "editorGutter.addedBackground": "#216479",
+    "editorGutter.addedBackground": "#217962",
     "editorGutter.deletedBackground": "#792138",
     "editorGutter.foldingControlForeground": "#BFC7CF",
     "diffEditor.insertedTextBackground": "#1FF9BF26",
@@ -865,7 +865,6 @@
     {
       "scope": "keyword.control",
       "settings": {
-        "foreground": "#57B6CD",
         "fontStyle": "italic"
       }
     },
@@ -1654,11 +1653,6 @@
       ],
       "settings": {
         "foreground": "#D66A81"
-      }
-    },
-    {
-      "settings": {
-        "foreground": "#9285CC"
       }
     },
     {

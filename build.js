@@ -12,10 +12,19 @@ const invalidColors = (theme) => [
     .map(rule => [`tokenColors "${rule.name ?? [].concat(rule.scope)[0]}"`, rule.settings.foreground]),
 ].filter(([, value]) => !HEX_COLOR.test(value));
 
-const invalid = themes.flatMap(item => invalidColors(item.theme).map(([key, value]) => `${item.id}: ${key} = ${value}`));
+// VS Code ignores a rule without a scope, while other tools reading the theme
+// apply it to all text, so a lost scope would go unnoticed in VS Code
+const rulesWithoutScope = (theme) => theme.tokenColors
+  .filter(rule => [].concat(rule.scope ?? []).length === 0)
+  .map(rule => `tokenColors rule without a scope: ${JSON.stringify(rule)}`);
+
+const invalid = themes.flatMap(item => [
+  ...invalidColors(item.theme).map(([key, value]) => `${key} = ${value}`),
+  ...rulesWithoutScope(item.theme),
+].map(problem => `${item.id}: ${problem}`));
 
 if (invalid.length > 0) {
-  console.log('💥 Invalid colors, no files were written:');
+  console.log('💥 Invalid theme, no files were written:');
   invalid.forEach(line => console.log(`   ${line}`));
   process.exit(1);
 }

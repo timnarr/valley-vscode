@@ -179,7 +179,7 @@ const editorColor = {
     "minimapSlider.background": color.white + color.alpha10,
     "minimapSlider.hoverBackground": color.white + color.alpha20,
     "minimapSlider.activeBackground": color.white + color.alpha30,
-    "minimapGutter.addedBackground": color.git.modifiedIndicator,
+    "minimapGutter.addedBackground": color.git.addedIndicator,
     "minimapGutter.modifiedBackground": color.git.modifiedIndicator,
     "minimapGutter.deletedBackground": color.git.deletedIndicator,
 
@@ -330,7 +330,7 @@ const editorColor = {
     "editorOverviewRuler.wordHighlightForeground": color.white + color.alpha20,
     "editorOverviewRuler.wordHighlightStrongForeground": color.white + color.alpha30,
     "editorOverviewRuler.modifiedForeground": color.git.modifiedIndicator,
-    "editorOverviewRuler.addedForeground": color.git.modifiedIndicator,
+    "editorOverviewRuler.addedForeground": color.git.addedIndicator,
     "editorOverviewRuler.deletedForeground": color.git.deletedIndicator,
     "editorOverviewRuler.errorForeground": color.editor.action.errorForeground,
     "editorOverviewRuler.warningForeground": color.editor.action.warningForeground,
@@ -357,7 +357,7 @@ const editorColor = {
     // ## Editor - Gutter
     "editorGutter.background": color.editor.surface.depth3,
     "editorGutter.modifiedBackground": color.git.modifiedIndicator,
-    "editorGutter.addedBackground": color.git.modifiedIndicator,
+    "editorGutter.addedBackground": color.git.addedIndicator,
     "editorGutter.deletedBackground": color.git.deletedIndicator,
     // "editorGutter.commentRangeForeground": "",
     "editorGutter.foldingControlForeground": color.editor.text.default,

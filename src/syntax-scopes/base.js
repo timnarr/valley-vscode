@@ -302,9 +302,9 @@ const base = (fontstyle) => {
       }
     },
     {
+      // The color comes from "Control flow / Special keywords" further down
       "scope": "keyword.control",
       "settings": {
-        "foreground": color.syntax.turquoiseBlue,
         "fontStyle": fontstyle === 'italic' ? 'italic' : '',
       }
     },
