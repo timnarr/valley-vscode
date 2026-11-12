@@ -81,12 +81,13 @@ I can highly recommend the following settings to improve readability and appeara
 // Minimap
 "editor.minimap.renderCharacters": false,
 // Icon Theme
-// I like using the 'Material Icon Theme' with these settings
-// https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme
-"workbench.iconTheme": "material-icon-theme",
-"material-icon-theme.saturation": 0.75,
-"material-icon-theme.folders.color": "#C5C5C9",
-"material-icon-theme.folders.theme": "classic",
+// I like using the 'Symbols' Icon Theme
+// https://marketplace.visualstudio.com/items?itemName=miguelsolorio.symbols
+"workbench.iconTheme": "symbols",
+// Product Icon Theme
+// I like using the 'Fluent Icons' Product Icon Theme
+// https://marketplace.visualstudio.com/items?itemName=miguelsolorio.fluent-icons
+"workbench.productIconTheme": "fluent-icons",
 ```
 
 ## Feedback and Issues
