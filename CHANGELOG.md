@@ -4,8 +4,14 @@ All notable changes to "Valley" will be documented in this file.
 ***
 
 ## Unreleased
+`Changed`
+- The markers for added, modified and deleted lines in the gutter, overview ruler and minimap share one brightness and stand out clearly from the editor: green `#22876B`, blue `#4E75AF` (the hue of modified files in the explorer) and red `#AE5364`
+- Inserted and removed text in the diff editor are equally strong: green `#1DC799` instead of the glaring `#1FF9BF`, red `#F34E6A` instead of `#F91F59`
+- Files in the explorer and source control view: conflicting files are a lighter pink (`#DA69BB`), untracked files a slightly lighter green (`#27AB7C`), deleted files a lighter red (`#DD7288`) and submodules a calmer green (`#9CB84B`)
+
 `Fixed`
-- Added lines in the gutter, overview ruler and minimap are green (`#217962`) instead of the blue of modified lines
+- Added lines in the gutter, overview ruler and minimap are green instead of the blue of modified lines
+- The markers for deleted lines in the gutter were barely visible
 
 ## 0.7.2 - November 12, 2026
 `Changed`
