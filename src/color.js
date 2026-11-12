@@ -13,6 +13,7 @@ const color = {
   alpha35: "59",
   alpha40: "66",
   alpha50: "80",
+  alpha55: "8C",
   alpha60: "99",
   alpha70: "B3",
   alpha75: "BF",

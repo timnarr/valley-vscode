@@ -206,7 +206,7 @@ const editorColor = {
     "tab.lastPinnedBorder": color.editor.surface.depth3,
     "tab.inactiveBackground": color.editor.surface.depth2,
     "tab.unfocusedInactiveBackground": color.editor.surface.depth2,
-    "tab.inactiveForeground": color.white + color.alpha50,
+    "tab.inactiveForeground": color.white + color.alpha55,
     "tab.unfocusedActiveForeground": color.white + color.alpha60,
     "tab.unfocusedInactiveForeground": color.white + color.alpha30,
     "tab.hoverBackground": color.editor.surface.depth2,

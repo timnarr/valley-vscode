@@ -3,6 +3,10 @@ All notable changes to "Valley" will be documented in this file.
 
 ***
 
+## Unreleased
+`Fixed`
+- Better contrast for the names of inactive tabs
+
 ## 0.6.0 - November 11, 2026
 `Changed`
 - Smaller download: the extension package no longer includes screenshots and build sources

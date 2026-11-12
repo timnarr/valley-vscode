@@ -138,7 +138,7 @@
     "tab.lastPinnedBorder": "#1F1F1F",
     "tab.inactiveBackground": "#292929",
     "tab.unfocusedInactiveBackground": "#292929",
-    "tab.inactiveForeground": "#E5E7E880",
+    "tab.inactiveForeground": "#E5E7E88C",
     "tab.unfocusedActiveForeground": "#E5E7E899",
     "tab.unfocusedInactiveForeground": "#E5E7E84D",
     "tab.hoverBackground": "#292929",
