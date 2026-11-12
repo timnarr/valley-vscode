@@ -1,0 +1,17 @@
+{
+  "name": "valley-screenshot-helper",
+  "displayName": "Valley Screenshot Helper",
+  "description": "Runs VS Code commands for scripts/screenshots. Installed only into the screenshot profile, never published.",
+  "version": "1.0.0",
+  "publisher": "TimGrochowski",
+  "private": true,
+  "license": "CC-BY-NC-4.0",
+  "type": "commonjs",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "main": "./extension.js",
+  "activationEvents": [
+    "onStartupFinished"
+  ]
+}

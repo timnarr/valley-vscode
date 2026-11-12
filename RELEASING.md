@@ -15,9 +15,9 @@ npm test
 git status
 ```
 
-- `npm run build` stops on invalid color values.
+- `npm run build` stops on invalid color values. It then renews the screenshots, which takes about a minute (see [Renew the screenshots](#renew-the-screenshots)).
 - `npm test` fails if a checked color combination drops below 3:1.
-- `git status` must be clean after the build. If the build changed `themes/`, commit that first. CI runs the same checks on every push.
+- `git status` must be clean after the build. If the build changed `themes/` or `screenshots/`, commit that first. CI runs the same checks on every push, without the screenshots.
 
 Then look at the theme in VS Code: press **F5** (launch configuration "Launch Extension"), or run `code --extensionDevelopmentPath="$PWD" demo/`. In the new window, select **Valley** with `Cmd+K Cmd+T`. This version replaces your installed copy only in that window.
 
@@ -160,3 +160,19 @@ With Marketplace Trusted Publishing, a GitHub workflow publishes without a store
 3. From then on, a release is steps 1 to 4, then `git push origin master vX.Y.Z`.
 
 See [Publishing Extensions](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#publish-with-github-actions-and-trusted-publishing) in the VS Code docs for details.
+
+## Renew the screenshots
+
+A script takes the screenshots in `screenshots/`, so they follow every color change. `npm run build` runs it after building the themes; on its own:
+
+```bash
+npm run screenshots
+```
+
+- It needs macOS, VS Code in `/Applications` (or `VSCODE_APP` set to its path), the font [JetBrains Mono](https://www.jetbrains.com/lp/mono/), [oxipng](https://github.com/oxipng/oxipng) (`brew install oxipng`) and a network connection for the extensions the README recommends. In CI and outside macOS it skips itself.
+- It starts VS Code with a separate profile in a temporary folder, so your own settings, extensions, keychain and Git configuration stay untouched. A VS Code window opens for about a minute and closes again; the screenshots don't depend on what you do meanwhile.
+- A new screenshot replaces the old one only when more than 30 pixels differ; the log marks the others as unchanged. So `git status` only lists screenshots that really changed, and oxipng compresses only those, losslessly. A single motif renewed on its own can still differ from a full run in a few dozen pixels of the minimap, because language servers color only what has been on screen; `npm run build` renews all of them and is the reference.
+- The script reads the settings and extensions from "Recommended Settings" in the README, so the screenshots always show what it recommends. `scripts/screenshots/motifs.js` lists every screenshot with its file, lines and the VS Code commands that set it up. `npm run screenshots -- valley-vscode-title` renews only the named ones.
+- The theme comes from your working copy, the files in the screenshots from the last commit: the script opens a Git copy of `HEAD`. Commit changes to `demo/` before renewing.
+- `npm run build:themes` builds only the themes, for quick rounds while working on colors.
+- The README and the Marketplace page load the images from `master` on GitHub, so they show new screenshots after a push, without a new release.

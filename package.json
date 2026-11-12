@@ -16,8 +16,10 @@
   },
   "homepage": "https://github.com/timnarr/valley-vscode",
   "scripts": {
-    "build": "node build.js",
-    "test": "node test/contrast.js"
+    "build": "node build.js && node scripts/screenshots/index.js",
+    "build:themes": "node build.js",
+    "test": "node test/contrast.js",
+    "screenshots": "node scripts/screenshots/index.js"
   },
   "galleryBanner": {
     "color": "#1F1F1F",

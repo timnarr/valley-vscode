@@ -6,6 +6,7 @@ vsc-extension-quickstart.md
 build.js
 demo/**
 screenshots/**
+scripts/**
 screenshots.md
 src/**
 test/**
