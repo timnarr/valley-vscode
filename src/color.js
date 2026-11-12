@@ -80,9 +80,9 @@ const color = {
     mergeConflictCurrent: "#10ac84",
     mergeConflictIncoming: "#64AEF7",
     modifiedIndicator: "#216479",
-    modifiedResource: "#38A7C9",
+    modifiedResource: "#5A8BF9",
     submoduleResource: "#A6C837",
-    untrackedResource: "#5B89DB",
+    untrackedResource: "#04A374",
   },
   syntax: {
     tea: '#78B98A',
