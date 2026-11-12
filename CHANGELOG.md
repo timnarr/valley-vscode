@@ -3,7 +3,7 @@ All notable changes to "Valley" will be documented in this file.
 
 ***
 
-## Unreleased
+## 0.7.0 - November 12, 2026
 `Changed`
 - Modified files in the explorer and source control view are blue (`#5A8BF9`), untracked files green (`#04A374`)
 
