@@ -3,6 +3,10 @@ All notable changes to "Valley" will be documented in this file.
 
 ***
 
+## Unreleased
+`Changed`
+- New icon: the folded blue V, redrawn with even arms and a cleaner fold on a rounded tile
+
 ## 0.7.1 - November 12, 2026
 `Changed`
 - The borders between the activity bar, sidebar, editor groups and panel use the grey of the title and status bar instead of near black, as in VS Code's Modern UI
