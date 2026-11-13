@@ -15,24 +15,24 @@
 ----
 
 ## My motivation to build Valley
->I've always had this feeling about themes like: "If I use this theme it makes me a better developer", which is of course totally stupid, but I've always had this feeling and changed my theme many times. But I didn't felt completely comfortable with any of it and was kind of blocked in my work. Because colors were not harmonious, contrasts were missing or much too strong. And all in all, I always lacked orientation because there was a lack of design in some way. And so I have developed my own. Of course this is a **very personal perception**, and this theme won't fit 100% for some people either. But maybe only a few people have as much fun with Valley as I do.
+> I've always had this feeling about themes: "If I use this theme, it will make me a better developer." Of course that's silly, but I couldn't shake it and changed my theme many times. I never felt completely comfortable with any of them and was kind of blocked in my work, because the colors weren't harmonious and the contrast was either missing or much too strong. All in all, I always lacked orientation, because something about the design was missing. So I made my own. Of course this is a **very personal perception**, and Valley won't be a perfect fit for everyone. But maybe a few people will have as much fun with Valley as I do.
 
 ## How to Install
 - Open the **"Extensions"** sidebar in Visual Studio Code
 - Search for `Valley`
 - Choose "Valley" by Tim Narr and click **"Install"**
-- [Select the Theme](https://code.visualstudio.com/docs/getstarted/themes#_selecting-the-color-theme)
+- [Select the theme](https://code.visualstudio.com/docs/configure/themes#_color-themes): "Valley", or "Valley Italic", which also sets keywords and attributes in italics
 
 **or via "Quick Open, Go to File..."**
 
-- Open the **"Quick Open, Go to File..."** input, by pressing the `⌘P` shortcut on macOS or `Ctrl+P` on Windows/Linux
-- Copy-Paste this line `ext install TimGrochowski.valley-vscode`
+- Open **"Quick Open, Go to File..."** by pressing `⌘P` on macOS or `Ctrl+P` on Windows/Linux
+- Paste `ext install TimGrochowski.valley-vscode`
 - Press Enter
 
-**and if you like Valley rate it or write a review in the [marketplace](https://marketplace.visualstudio.com/items?itemName=TimGrochowski.valley-vscode&ssr=false#review-details)** ✨
+**And if you like Valley, rate it or write a review in the [marketplace](https://marketplace.visualstudio.com/items?itemName=TimGrochowski.valley-vscode&ssr=false#review-details)** ✨
 
 ## Screenshots
-You can find more screenshots [here](https://github.com/timnarr/valley-vscode/blob/master/screenshots.md). **Or even better: Use the Theme Tester Playground [here](https://vscode.dev/theme/timgrochowski.valley-vscode).**
+You can find more screenshots [here](https://github.com/timnarr/valley-vscode/blob/master/screenshots.md). **Or even better: try Valley live [on vscode.dev](https://vscode.dev/theme/timgrochowski.valley-vscode).**
 
 **Vivid and pleasant syntax color palette for long coding sessions.**
 
@@ -46,11 +46,11 @@ You can find more screenshots [here](https://github.com/timnarr/valley-vscode/bl
 
 ![Valley surfaces and command palette](https://github.com/timnarr/valley-vscode/blob/master/screenshots/valley-vscode-editor-surfaces-commands.png?raw=true)
 
-**I have tried to be AA compliant and achieve a contrast ratio of 4.5 for all main color combinations.**
+**I aimed for WCAG AA: the syntax colors and most text on the workbench reach a contrast ratio of at least 4.5:1. Deliberately subdued elements such as comments, breadcrumbs and placeholders stay above 3:1.**
 
 ![Valley terminal](https://github.com/timnarr/valley-vscode/blob/master/screenshots/valley-vscode-terminal-full.png?raw=true)
 
-**Features like search or Git have their own color palette and are consistent in their use. For example, all search-related colors are consistently yellow.**
+**Features like search or Git have their own colors and use them consistently. For example, all search-related colors are yellow.**
 
 ![Valley search editor](https://github.com/timnarr/valley-vscode/blob/master/screenshots/valley-vscode-editor-search.png?raw=true)
 
@@ -58,10 +58,10 @@ You can find more screenshots [here](https://github.com/timnarr/valley-vscode/bl
 You can explore Valley's color palette on [calcolor.co](https://calcolor.co/palette/915560412).
 
 ## Personalization
-If something does not look the way you want it to, feel free to overwrite it via user settings and give Valley your own personal touch. For more Information see the Visual Studio Code docs for ["Customizing a Color Theme"](https://code.visualstudio.com/docs/getstarted/themes#_customizing-a-color-theme).
+If something doesn't look the way you want, feel free to override it in your user settings and give Valley your own personal touch. For more information, see ["Customize a color theme"](https://code.visualstudio.com/docs/configure/themes#_customize-a-color-theme) in the Visual Studio Code docs.
 
 ## Recommended Settings
-I can highly recommend the following settings to improve readability and appearance of Visual Studio Code. These are also the settings that can be seen on the screenshots:
+I highly recommend the following settings to improve the readability and appearance of Visual Studio Code. They are also the settings used in the screenshots:
 
 ```json
 "workbench.colorTheme": "Valley",
@@ -91,20 +91,20 @@ I can highly recommend the following settings to improve readability and appeara
 ```
 
 ## Feedback and Issues
-If you have any suggestions, feedback or if you found a bug, please [file an issue](https://github.com/timnarr/valley-vscode/issues) and let me know. I am very happy about every feedback. Screenshots are very welcome.
+If you have suggestions or feedback, or if you found a bug, please [open an issue](https://github.com/timnarr/valley-vscode/issues) and let me know. I appreciate all feedback, and screenshots are very welcome.
 
-## Valley Adoptions
+## Valley Ports
 - [Valley for iTerm2](https://github.com/timnarr/valley-iterm)
-- [Valley for Windows Terminal, by Carl Hartshorn](https://github.com/carl-hartshorn/valley-windowsterminal)
+- [Valley for Windows Terminal, by Carl Underwood](https://github.com/carl-underwood/valley-windowsterminal)
+
 ## Tools
-I have used a lot of great tools that have helped me to create this theme:
+Many great tools helped me create this theme:
 - [whocanuse.com](https://whocanuse.com/)
 - [accessible-colors.com](https://accessible-colors.com/)
 - [contrast-grid.eightshapes.com](https://contrast-grid.eightshapes.com/)
 - [color.review](https://color.review/)
 - [abc.useallfive.com](https://abc.useallfive.com/)
 - [contrast-finder.tanaguru.com](https://contrast-finder.tanaguru.com/)
-- [contrast-checker.glitch.me](https://contrast-checker.glitch.me)
 - [calcolor.co](https://calcolor.co)
 
 ## License
@@ -112,10 +112,10 @@ I have used a lot of great tools that have helped me to create this theme:
 
 ***
 
-The syntax color palette was partly inspired by the Google Chrome DevTools Theme (in darkmode). I used language scopes from the Visual Studio Code Dark+ Theme to jumpstart Valley.
+The syntax color palette was partly inspired by the dark theme of the Google Chrome DevTools. I used language scopes from the Visual Studio Code Dark+ theme to jumpstart Valley.
 
 ***
 
-Valley is available for free in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=TimGrochowski.valley-vscode). If you enjoy using it and want to say thank you then you can [buy me a coffee](https://buymeacoffee.com/tim.n) and/or rate it/write a review in the [marketplace](https://marketplace.visualstudio.com/items?itemName=TimGrochowski.valley-vscode&ssr=false#review-details) ✨.
+Valley is available for free in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=TimGrochowski.valley-vscode). If you enjoy using it and want to say thank you, you can [buy me a coffee](https://buymeacoffee.com/tim.n) or rate it and write a review in the [marketplace](https://marketplace.visualstudio.com/items?itemName=TimGrochowski.valley-vscode&ssr=false#review-details) ✨.
 
 **Enjoy** ❤️
